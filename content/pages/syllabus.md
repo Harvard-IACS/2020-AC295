@@ -31,7 +31,7 @@ pre {
 ### AC295
 
 
-## Syllabus - Fall 2019
+## Syllabus - Spring 2020
 
 Welcome to AC295 Advanced Practical Data Science. This course is the third of a series of data science after AC209A and AC209B. The course focuses on applied and practical topics in data science. 
 
