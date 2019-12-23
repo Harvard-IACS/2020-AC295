@@ -1,20 +1,27 @@
 COURSE_NAME = '2020-AC295'
 
-AUTHOR = ''
+AUTHOR = 'Pavlos Protopapas'
 
-SEMESTER = ''
+SEMESTER = 'Spring'
 
-YEAR = ''
+YEAR = '2020'
 
-SITEURL = ''
+SITEURL = 'https://harvard-iacs.github.io/2020-AC295'
 
-GITHUB = ''
+GITHUB = 'https://github.com/Harvard-IACS/2020-AC295'
 
-COLOR = '#8996A0'
+COLOR = '#2996A0'
 
 # Define Navbar links
 # ex. ('Link Name', 'URL')
-MENUITEMS = []
+MENUITEMS = [ ('Syllabus', 'pages/syllabus.html'),
+    ('Calendars', 'pages/calendars.html'),
+    ('Schedule', 'pages/schedule.html'),
+    ('Materials', 'pages/materials.html'),
+    ('Projects', 'pages/projects.html'),
+    ('FAQ', 'pages/faq.html'),
+    ('Resources', 'pages/resources.html')
+]
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
