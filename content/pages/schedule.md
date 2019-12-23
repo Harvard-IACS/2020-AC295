@@ -7,7 +7,24 @@ Date: 2019-12-22
 |-----|-----|-----|
 |1|Introduction and set up||
 |2|From notebook to Python and optimizations|Reading and Discussion|
-|3|Virtual environments, virtual boxes, and containers ||
-|4|Kubernetes and Dask ||
+|3|Virtual environments, virtual boxes, and containers |Reading and Discussion|
+|4|Kubernetes and Dask |Reading and Discussion|
 |5|Practicum||
 |6|Practicum||
+|7|Intro to transfer learning: statistical elements, different distributions and sampling|Reading and Discussion|
+|8|Computer vision and language models: SOTA models (VGG, Inception, ResNet, BERT, GPT)|Reading and Discussion|
+|9|Basic techniques of Transfer Learning: "add list of basic techniques" + distillation and compression |Reading and Discussion|
+|10|Practicum||
+|11|Practicum||
+|12|Visualization for investigating model: "add list of basic techniques" + computing receptive fields of Convolutional Neural Networks (CNN)||
+|13|||
+|14|||
+|15|||
+|16|||
+|17|||
+|18|||
+|19|||
+|20|||
+|21|||
+|22|||
+|23|||
