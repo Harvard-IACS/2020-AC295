@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Spring 2020 - Harvard University, Institute for Applied Computational Science. "
+    />
+    <meta name="author" content="Pavlos Protopapas" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,700"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../style/tipuesearch/tipuesearch.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../style/images/favicon.ico"
+    />
+    <link rel="stylesheet" href="../style/css/iacs.css" />
+
+    <title>Harvard AC295 | Syllabus</title>
+
+    <style>
+      .navbar {
+        background-color: #6996A0
+      }
+    </style>
+  </head>
+  <body>
+<nav class="navbar navbar-dark navbar-expand-md">
+  <div class="container">
+    <a class="navbar-brand" href="..">
+      <img
+        class="navbar-brand-logo"
+        src="../style/images/logo.png"
+      />
+      <h3 class="course-title">AC295</h3>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarsDefault"
+      aria-controls="navbarsDefault"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/syllabus.html">Syllabus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/calendars.html">Calendars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/schedule.html">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/materials.html">Materials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/resources.html">Resources</a>
+        </li>
+        <form
+          class="form-inline my-2"
+          action="../search.html"
+          onsubmit="return validateForm(this.elements['q'].value);"
+        >
+          <div class="input-group input-group-sm">
+            <input
+              class="form-control"
+              type="text"
+              name="q"
+              placeholder="Search Topic"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-default" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </ul>
+    </div>
+    <!-- .collapse navbar-collapse -->
+  </div>
+  <!-- .container -->
+</nav>
+    <main id="content" class="container">
+  <h1>Syllabus</h1>
+  <br />
+  <hr />
+  <style>
+pre {
+  background-color: #F5F5F5;
+  display: block;
+  font-family: monospace;
+  font-size: 14px;
+  white-space: pre;
+  border-color: #999999;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  margin: 1em 0;
+  padding: 5px;
+  white-space: pre-wrap;
+}
+.containerMain {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+</style>
+
+<h1>Topics in Applied Computation: <br> Advanced Practical Data Science</h1>
+<h3>AC295</h3>
+<h2>Syllabus - Fall 2019</h2>
+<p>Welcome to AC295 Advanced Practical Data Science. This course is the third of a series of data science after AC209A and AC209B. The course focuses on applied and practical topics in data science. </p>
+<p>The material of the course is divided into 3 modules. The main goal is to prepare students for topics in deploying data science applications. </p>
+<p><strong>1.</strong> How to scale a model from a prototype to the cloud.</p>
+<p><strong>2.</strong>  How to use existing models using transfer learning or techniques to speed up existing models such as distilliation and compression. </p>
+<p><strong>3.</strong> How to use visualization tools for investigating properties and diagnosing issues of models.</p>
+<h2>List of Contents</h2>
+<ul>
+<li>Prerequisites</li>
+<li>Software</li>
+<li>Course Activities</li>
+<li>Instructor Office Hours</li>
+<li>Recommended Textbook</li>
+<li>Assignments</li>
+<li>Course Policies</li>
+</ul>
+<h2>Prerequisites</h2>
+<p>You are expected to have programming experience at the level of CS 50 or above, statistics knowledge at the level of Stat 110 or above, basic data science (or machine learning) at the level of AC209A and AC209B. </p>
+<h2>Software</h2>
+<p>We will be using a variety of software primarily Python 3. More details in class.</p>
+<h2>Course Activities</h2>
+<p>The course is structured in two different types of activities that repeat themselves each week and they are: Lectures, Labs.</p>
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Syllabus0.jpg). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+<p><img alt="alt_text" src="images/Syllabus0.jpg" title="image_tooltip"></p>
+<h4><strong>Lectures</strong></h4>
+<p>The class consists of two weekly lectures. Lectures are held Tues 4:30 pm ‐ 6:30 pm (to be discussed).  At the beginning of each class we will review the one from previous week, followed by the one from the current and in-class exercise to assess your understanding of the material and to help us identify gaps. Attendance to lectures is mandatory. </p>
+<p><strong>Labs</strong></p>
+<p>Labs are designed as hands-on in-class activities (both groups and individuals). The instructor will go over practice problems and review difficult material. Attendance at labs is mandatory. Lab sessions are held on Thursday from 4:30 pm ‐ 6:30 pm.</p>
+<h2>Instructor Office Hours</h2>
+<p>To be discussed  (##TODO)</p>
+<h2>Recommended Textbook</h2>
+<p>To be discussed  (##TODO)</p>
+<h2>Assignments</h2>
+<h4><strong>Final Project</strong></h4>
+<p>There will be a final group project (2-4 students) due during Exams period. See Calendar for specific dates.</p>
+<h4><strong>Course Grade</strong></h4>
+<p>Expand and explain this in words (##TODO)</p>
+<table>
+  <tr>
+   <td><strong>Assignment</strong>
+   </td>
+   <td><strong>Final Grade Weight</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Practicums (3)
+   </td>
+   <td>68%
+   </td>
+  </tr>
+  <tr>
+   <td>Final Project 
+   </td>
+   <td>20 %
+   </td>
+  </tr>
+  <tr>
+   <td>Quizzes
+   </td>
+   <td>10%
+   </td>
+  </tr>
+  <tr>
+   <td>Participation
+   </td>
+   <td>2%
+   </td>
+  </tr>
+  <tr>
+   <td>Total
+   </td>
+   <td>100%
+   </td>
+  </tr>
+</table>
+
+<h2>Course Policies</h2>
+<h4><strong>Collaboration Policy</strong></h4>
+<p>To be discussed  (##TODO)</p>
+<h4><strong>Late Day Policy</strong></h4>
+<p>To be discussed  (##TODO)</p>
+<h4><strong>Re-Grading Policy</strong></h4>
+<p>To be discussed  (##TODO)</p>
+<h4><strong>Communication from Staff to Students</strong></h4>
+<p>To be discussed  (##TODO)</p>
+<h4><strong>Accommodations for Students with Disabilities</strong></h4>
+<p>Students needing academic adjustments or accommodations because of a documented disability must present their Faculty Letter from the <a href="http://www.aeo.fas.harvard.edu/">Accessible Education Office</a> (AEO) and speak with Kevin by the end of the third week of the term: Friday, September 15. Failure to do so may result in us being unable to respond in a timely manner. All discussions will remain confidential.</p>
+<h4><strong>Diversity and Inclusion Statement</strong></h4>
+<p>Data Science, like many fields of science, has historically only been represented by a small sliver of the population. This is despite some of the early computer scientist pioneers being women (see <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a> and <a href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</a> for two examples). Recent initiatives have attempted to overcome some barriers to entry: <a href="https://www.madewithcode.com/">Made /w Code</a>.</p>
+<p>We would like to attempt to discuss diversity in data science from time to time where appropriate and possible. Please contact us (in person or electronically) or submit anonymous feedback if you have any suggestions to improve the diversity of the course materials. Furthermore, we would like to create a learning environment for our students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:If you have a name and/or set of pronouns that differ from those that appear in your official Harvard records, please let us know!</p>
+<p>If you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with us. We want to be a resource for you. Remember that you can also submit anonymous feedback (which will lead to me making a general announcement to the class, if necessary to address your concerns). If you prefer to speak with someone outside of the course, you may find helpful resources at the Harvard Office of Diversity and Inclusion.</p>
+<p>We (like many people) are still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to us about it. (Again, anonymous feedback is always an option.)</p>
+<p>As a participant in course discussions, you should also strive to honor the diversity of your classmates.</p>
+<h4><strong>Academic Honesty</strong></h4>
+<p>Ethical behavior is an important trait of a Data Scientist, from ethically handling data to attribution of code and work of others. Thus, in AC209 we give a strong emphasis to Academic Honesty.</p>
+<p>As a student your best guidelines are to be reasonable and fair. We encourage teamwork for problem sets and allow submission in pairs for most problem sets, but you should not split the homework and you should work on all the problems together.</p>
+    </main>
+
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">Copyright 2018 &copy;
+      <a class="text-muted" href="https://iacs.seas.harvard.edu/">Institute for Applied Computational Science</a>
+    </span>
+  </div>
+</footer>     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

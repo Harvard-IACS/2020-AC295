@@ -1,4 +1,4 @@
-COURSE_NAME = '2020-AC295'
+COURSE_NAME = 'AC295'
 
 AUTHOR = 'Pavlos Protopapas'
 
@@ -10,7 +10,7 @@ SITEURL = 'https://harvard-iacs.github.io/2020-AC295'
 
 GITHUB = 'https://github.com/Harvard-IACS/2020-AC295'
 
-COLOR = '#2996A0'
+COLOR = '#6996A0'
 
 # Define Navbar links
 # ex. ('Link Name', 'URL')
