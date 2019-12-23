@@ -32,8 +32,6 @@ pre {
 
 -  **Question ?**
   - Answer. 
-  - ** ANOTHER QUEESTION 
-
 
 # Auditors
 

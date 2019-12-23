@@ -1,4 +1,4 @@
-Title:  Topics in Applied Computation: <br> Advanced Practical Data Science <br>
+﻿Title:  Topics in Applied Computation: <br> Advanced Practical Data Science <br>
 Date: 2019-12-20
 save_as: index.html
 
@@ -53,6 +53,8 @@ pre {
 
 
 3.  In the third part we will be introducing a number of intuitive visualization tools for investigating properties and diagnosing issues of models. We will be demonstrating a number of visualization tools ranging from the well established (like saliency maps) to recent ones that have appeared in https://distill.pub.
+
+4. Test Andrea | publish from virtual box
 
 <br>
 <br> 
