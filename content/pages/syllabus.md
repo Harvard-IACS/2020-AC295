@@ -24,7 +24,151 @@ pre {
 }
 </style>
 
+## List of Contents
+- [Prerequisites](#Prerequisites)
+- [Software](#Software)
+- [Course Activities](#Course-Activities)
+- [Resources](#Resources)
+- [Assignments](#Assignments)
+- [Getting Help](#Getting-Help)
+- [Course Policies](#Course-Policies)
 
+<hr>
+<a name='Prerequisites'>
+
+## Prerequisites
+
+You are expected to be fluent in programming (Python), statistics knowledge at the level of Stat 110 or above, data science (or machine learning) at the level of AC209A and AC209B. 
+
+<hr>
+<a name='Software'>
+
+## Software
+
+We will be using a variety of software primarily Python 3 (Pytorch, Tensorflow, Docker...). More details in class.
+
+<hr>
+<a name='Course-Activities'>
+
+## Course Activities
+
+IN CONSTRUCTION
+
+The course is organized in three modules each one 4 weeks long. Each module is structured in three types of activities and they are **Lectures**, **Seminar/Reading Club**, and **Practicum**. Each activity requires the student to complete different assignments in the form of exercise/homework, quizzes, reading assignment and presentation (see Assignments). During the first 3 weeks of each modules student will attend Lecture on T and Seminar on Th. The fourth week Practicum on T and Th. **Attendance is mandatory** contact the instructors ahead for any issue.
+
+1. **Lectures** are held on **Tuesdays** from **4:30-5:45** pm in TBD_BUILDING, TBD_BUILDING. ADD DESCRIPTION.
+
+2. **Seminar/Reading Club** are held on **Thursdays** from **4:30-5:45** pm in TBD_BUILDING, TBD_BUILDING. ADD DESCRIPTION.
+
+3. **Practicum** are activities led by instructors to elaborate upon the lectures material. There will be three practicum:
+    * 3a. **Big Data** will be held on **add days** and will cover ADD SHORT SUMMARY.  
+    * 3b. **Tranfer Learning** will be held on **add days** and will cover ADD SHORT SUMMARY.
+    * 3c. **Human in the Loop** will be held on **add days** and will cover ADD SHORT SUMMARY.
+
+<hr> 
+<a name='Resources'>
+
+## Resources
+
+A brief list of the resources can be found below:
+
+[Resource_Name](http://add_link_here) 
+
+<hr>
+<a name='Assignments'>
+
+## Assignments
+
+IN CONSTRUCTION
+
+The **final grade** will be calculated using the following weights for each assignment:
+
+|Assignment|Final Grade Weight|
+|-----|-----|
+|Homework| 9%|   
+|Quizzes|  9%|  
+|Presentation| 15%| 
+|Practicum|  45%| 
+|Project|  20%|   
+|Participation|  2%|       
+|**Total**|  **100%**|
+
+<br><br/> 
+**Exercise/Homework**
+
+There are 9 homework to complete. They will be released at the end of each regular week Lecture and due the next one. The homework are graded on a scale 1 to 5, where 5 is the highest grade.
+
+**Quizzes** 
+
+There will be a quiz at the beginning of each Seminar/Reading Club class based on what was discussed in lecture and contained in the assigned readings. Students will have a limited amount of time to complete the quiz. 40% of the quizzes will be dropped before calculating your final grade.
+
+**Presentation**
+
+Every Seminar two groups will be presenting the reading material assingned at the beginning of the week.
+
+**Practicum**
+
+There will be a final group project due during Exams period encompassing all the material learned in class.
+
+**Submitting an Assignment**
+
+Instructions for turning in assignments will be posted when the semester starts.
+
+**Presentation Guidelines**
+
+Prsentation will be graded based on:
+
+1. Summary, main topics of the readings.
+2. Motivations, relevant reasons for the application.
+3. How the authors approached and solved the problem. 
+4. Key assumptions underping the technology.
+5. Key ideas. 
+6. Methodology, schematic steps to solve the problem. 
+7. Applications, description of real world application. 
+8. Future readings and why. Students seek for supporting literature for improving technology (min 1, max 3). 
+
+<hr>
+<a name='Getting-Help'>
+
+## Getting Help
+
+For questions about homework, course content, package installation, and after you have tried to troubleshoot yourselves, the process to get help is:
+  
+1. Go to **Office Hours**, this is the best way to get help. 
+2. For personal and confidential matters send an email to the **instructors**.
+
+<hr>
+<a name='Course-Policies'>
+
+## Course Policies  
+
+**Collaboration Policy**
+ 
+We encourage you to talk and discuss the assignments with your fellow students.  Discussion is encouraged, **copying is not allowed**.
+
+**Late Day Policy**
+
+Homework is due on Tuesdays before class. No late day per homework.
+
+**Re-Grading Policy**
+
+We take great care in making sure all homework are graded properly. Contact instructors for any issue.
+
+**Communication from Staff to Students**
+
+Class announcements will be through **Canvas**. All homework and quizzes will be posted and submitted in Canvas (TBD_QUIZZES). Also all feedback forms.
+
+**Academic Honesty**
+
+Ethical behavior is an important trait of a Data Scientist, from ethically handling data to attribution of code and work of others. Thus, in AC295 we give a strong emphasis to Academic Honesty. As a student your best guidelines are to be reasonable and fair. We encourage teamwork for problem sets, but you should not split the homework and you should work on all the problems together.
+
+**Accommodations for students with disabilities**
+ 
+Students needing academic adjustments or accommodations because of a documented disability must present their Faculty Letter from the [Accessible Education Office](http://www.aeo.fas.harvard.edu/)(AEO) and speak with Kevin by the end of the third week of the term: Friday, September 15.  Failure to do so may result in us being unable to respond in a timely manner. All discussions will remain confidential.
+
+<hr>
+
+-->> OLD VERSION
 
 
 # Topics in Applied Computation: <br> Advanced Practical Data Science
@@ -61,12 +205,12 @@ The material of the course is divided into 3 modules. The main goal is to prepar
 
 ## Prerequisites
 
-You are expected to have programming experience at the level of CS 50 or above, statistics knowledge at the level of Stat 110 or above, basic data science (or machine learning) at the level of AC209A and AC209B. 
+You are expected to be fluent in programming (Python), statistics knowledge at the level of Stat 110 or above, data science (or machine learning) at the level of AC209A and AC209B. 
 
 
 ## Software
 
-We will be using a variety of software primarily Python 3. More details in class.
+We will be using a variety of software primarily Python 3 (Pytorch, Tensorflow, Docker...). More details in class.
 
 
 ## Course Activities
