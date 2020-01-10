@@ -3,12 +3,12 @@ Category: lectures
 Date: 2020-01-07
 Author: Andrea Porelli
 Slug: lecture4
-Tags: TOPIC_10, TOPIC_11, TOPIC_12
+Tags: Dask, Python, Parallel Processing
 
 ## Slides
 
-- [Lecture 4: Title]({attach}presentation/lecture4.pdf) 
+- [Lecture 4: Dask]({attach}presentation/lecture4.pdf) 
 
 ## Jupyter Notebooks
 
-- [Lecture 4: Title]({filename}notebook/lecture4.ipynb) 
+- [Lecture 4: Data Science with Python and Dask]({filename}notebook/lecture4.ipynb) 

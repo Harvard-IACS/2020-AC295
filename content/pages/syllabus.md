@@ -84,7 +84,7 @@ There are 9 homework to complete. They will be released at the end of each regul
 
 **Quizzes** 
 
-There will be a quiz at the beginning of each Reading Discussion based on what was discussed during lecture. The question will cover some of the material from Reading List and students will access them using [Ed Platform](https://us.edstem.org/courses/160/sway/)host/444. Students will have a limited amount of time to complete the quiz. 40% of the quizzes will be dropped before calculating your final grade.
+There will be a quiz at the beginning of each Reading Discussion based on what was discussed during lecture. The question will cover some of the material from Reading List and students will access them using [Ed Platform](https://us.edstem.org/courses/160/sway/host/444). Students will have a limited amount of time to complete the quiz. 40% of the quizzes will be dropped before calculating your final grade.
 
 **Presentations**
 

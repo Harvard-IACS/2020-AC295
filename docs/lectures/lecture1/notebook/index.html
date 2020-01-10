@@ -1300,12 +1300,394 @@ h6:hover .anchor-link {
 
 .ansi-bold { font-weight: bold; }
 </style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lecture-4:-Dask">Lecture 4: Dask<a class="anchor-link" href="#Lecture-4:-Dask">¶</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dask is a useful tools 1. Add general description.</p>
+<p>Dask is a useful tools 2. Add infrastructure/platform description. Link to documentation <a href="https://dask.org/">Dask</a> and why it is cool <a href="https://twitter.com/dask_dev">Dask developer community on twitter</a>.</p>
+<p>Dask is a useful tools 3. a) What you can do you, b) what other advanced things people do.</p>
+<p>We'll go over the basics of some Dask services, but we should point out that a <em>lot</em> of talented people have given tutorials, check'em out.</p>
+<p>BLA BLA</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">¶</a></h1><ul>
+<li><a href="#Lecture-4:-Dask">Lecture 4: Dask</a><ul>
+<li><a href="#Part-1:-Scalable-computing">Part 1: The building block of scalable computing</a></li>
+<li><a href="#Public-cloud-basics">Public cloud basics</a><ul>
+<li><a href="#Cloud-pros-and-cons">Cloud pros and cons</a></li>
+</ul>
+</li>
+<li><a href="#Getting-started:-first-access-to-Azure">Getting started: first access to Azure</a></li>
+<li><a href="#Create-your-Azure-free-account">Create your Azure free account</a><ul>
+<li><a href="#Login-to-Azure-Dashboard-and-create-your-first-service">Login to Azure Dashboard and create your first service</a></li>
+<li><a href="#Create-API-key-to-use-Microsoft-Azure-service">Create API key to use Microsoft Azure service</a></li>
+<li><a href="#Script:-create-a-set-of-keys-for-using-Azure-services">Script: create a set of keys for using Azure services</a></li>
+</ul>
+</li>
+<li><a href="#Recap">Recap</a><ul>
+<li><a href="#What-you-have-learnt">What you have learnt</a></li>
+<li><a href="#What-you-will-learn-next-guide">What you will learn next guide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote><blockquote><p>ADD TO LECTURE PRESENTATION</p>
+</blockquote>
+</blockquote>
+<p><part 1: the building block of scalable computing></p>
+<p><chapter 1: why scalable computing matters></p>
+<p><1.1 Why Dask></p>
+<p><1.2 Cooking with DAGs></p>
+<p><1.3 Scaling out, concurrency, and autorecovery></p>
+<p><chapter 2: introducing dask></p>
+<p><part 2: working with structured data using dask dataframes></p>
+<p><2.1 Hello Dask: A first look at the DataFrame API></p>
+<p><2.2 Visualizing DAG></p>
+<p><2.3 Task Scheduling></p>
+<p><chapter 3: introducing dask dataframes></p>
+<p><3.1 Why to use DataFrames></p>
+<p><3.2 Dask and Pandas: DataFrame partitioning and shuffle></p>
+<p><3.3 Limitations></p>
+<blockquote><blockquote><blockquote><p>GO TO NOTEBOOK (MAYBE ONE SUMMARY SLIDE AND JUMP INTO NOTEBOOK)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><chapter 4: loading data into dataframes></p>
+<p><4.1 Read data, datasets, and datatypes></p>
+<p><4.2 Reading from relational database, HDFS, and S3></p>
+<p><chapter 5: cleaning and transforming dataframes></p>
+<p><5.1 Indexes, selecting, and dropping>
+    <5.1.1 Filtering and Reindexing></p>
+<p><5.2 Joining, concatenating, and unioning>
+    <5.2.1 Recording data></p>
+<p><5.3 Elementwise operations></p>
+<p><5.4 Dealing with missing values></p>
+<p><chapter 6: summarizing and analyzing dataframes></p>
+<p><6.1 Descriptive Statistics></p>
+<p><6.2 Built-In aggregate functions></p>
+<p><6.3 Custom aggregate functions></p>
+<p><6.4 (Rolling window) functions></p>
+<p><chapter 7: visualizing dataframes with seaborn></p>
+<p><7.1 Preare-reduce-collect-plot></p>
+<p><7.2 Continuous and categorial></p>
+<p><7.3 Density plots></p>
+<p><7.4 Random samples></p>
+<p><7.5 Heatmap></p>
+<blockquote><blockquote><blockquote><p>SKIP NEXT OR THIS IS THE MOST INTERESTING?</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><chapter 8: visualizing location data with datashader></p>
+<blockquote><blockquote><blockquote><p>SHOW CASE NOTEBOOK IN CLASS</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><part 3: extending and deploying dask></p>
+<p><chapter 9: working with bags and arrays></p>
+<p><9.1 Reading and parsing unstructured data with Bags>
+    <9.1.1 Selecting and viewing data from a Bag>
+    <9.1.2 Common parsing issue>
+    <9.1.3 Delimiters></p>
+<p><9.2 Transforming, filtering, and folding>
+    <9.2.1 Map, filter, and aggregate functions (foldby)> 
+    <9.2.2 Building Arrays from bags>
+    <9.2.3 Summary stats on bags: parallel text analysis>
+        <9.2.3.1 Bigrams>
+        <9.2.3.2 Tokens and filtering stopwords>
+        <9.2.3.2 Analyze bigrams></p>
+<p><chapter 10: machine learning with dask-ml></p>
+<p><10.1 Linear Models with Dask-ML></p>
+<p><10.2 Evaluating and tuning Dask-ML models></p>
+<p><10.3 Persisting Dask-ML models></p>
+<blockquote><blockquote><blockquote><p>EXERCISE: YOU LEARNED IT, NOW DO IT. REPRODUCE A PAPER FROM READING LIST</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><chapter 11: scaling and deploying dask></p>
+<p><11.1 Building a Dask cluster on Amazon AWS with Docker>
+    <11.1.1 to 11.1.7></p>
+<p><11.2 Running and monitoring Dask jobs on a cluster></p>
+<p><11.3 Cleaning up the Dask clusters on AWS></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-1:-Scalable-computing">Part 1: Scalable computing<a class="anchor-link" href="#Part-1:-Scalable-computing">¶</a></h2><p>If you ask different people, you'll get different answers, but one of the commonalities is that most people don't realize is that eventhough these services come with costs (i.e. both monetary and training), they provides great resources that social scientists should start exploring themself. Here are some highlights:</p>
+<ul>
+<li><strong> You can use them “anytime, anywhere”: </strong> public cloud users can access, barely always, cloud services and keep their data stored safely in the infrastructure.</li>
+<li><strong> You won't <em>need</em> to plan far ahead for provisioning: </strong> public cloud users can use infinite computing and storaging resources available on demand. In this way, the user can offload some problems to the service provider such as mantaining both hardware and software.</li>
+<li><strong> You can buy what you need, when you need it: </strong> public cloud allows you to use services eliminating any sort of up-front commitment by Cloud user.</li>
+<li><strong> Public cloud allows teams to collaborate: </strong> Public cloud allows you to share data and collaborate more easily.</li>
+</ul>
+<h2 id="Public-cloud-basics">Public cloud basics<a class="anchor-link" href="#Public-cloud-basics">¶</a></h2><p>Cloud Computing refers to both the applications delivered as services over the Internet and the hardware/systems software in the datacenters that provide those services. The datacenter hardware and software is what we will call a <em>Cloud</em>. When a Cloud is made available to the public (through pay-as-you-go services), it is called a Public Cloud; the service being sold from the datacenter to the provider such as Microsoft, Google, Amazon or IBM (which might or not might be the same) called computing utility [<a href="#Footnotes">1</a>] and the one sold from provider to user that we will refer as a web application or more in general a service. Current examples of public computing services include AmazonWeb Services, Google AppEngine, and Microsoft Azure. A differenet deployment system from the public is the private. The private Cloud refers to internal datacenters of a business or other organization that are not made available to the public. The figure below shows the roles of the people as users or providers of different layers of the Cloud.</p>
+<p><img alt="cloud_basics_from_article_1" src="img/cloud_basics.PNG"></p>
+<p><a><center> Image adapted from Armbust et al., 2009 </center></a></p>
+<p>The National Institute of Standards and Technology (NIST) defines cloud as [<a href="#Footnotes">2</a>]:</p>
+<p><em>“a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.”</em></p>
+<p>Cloud computing has 5 essential characteristics:</p>
+<ol>
+<li>Measured Service</li>
+<li>Rapid Elasticity</li>
+<li>Broad Network Access</li>
+<li>Resource Pooling</li>
+<li>On Demand Self Service</li>
+</ol>
+<p>You can think about cloud computing as composition of three different areas/models:</p>
+<p><img alt="Iass_Paas_SaaS_image" src="img/Iass_Paas_SaaS_image.PNG"></p>
+<ul>
+<li>The Infrastructure as a Service (<strong>IaaS</strong>) is a cloud of resources provided to users. IaaS provides the basic functionality of storage and computing as service consisting in network servers, storage systems, network instrumentality, and information headquarters.</li>
+<li>The Platform as a Service (<strong>PaaS</strong>) is a development environment provided as a service. These advanced levels of alternative service can be designed by end-users. PaaS offers virtualized servers that multiple users work on applications or grow innovative applications, with no having to concern about keeping operating systems, server hardware, equalization or weight power calculation.</li>
+<li>The Software as a Service (<strong>SaaS</strong>) is an application that is offered to consumers using the Internetwork. A single case of service works in the cloud and multiple end users services. An example of Cloud Computing is Software as a Service (SaaS), where you input data on software and the data is transformed remotely through a software interface without your computer being involved. Thus SaaS eliminates client fears on storage, server applications, application development, and related common concerns of IT. </li>
+</ul>
+<p>In this to tutorial we are going to show you examples encompasses PaaS, when you will build the experiment using the two tutorials, and SaaS, when you will learn how to use the cloud services in the three guides.</p>
+<h3 id="Cloud-pros-and-cons">Cloud pros and cons<a class="anchor-link" href="#Cloud-pros-and-cons">¶</a></h3><p>Overall, the advantages of using a cloud outperforms the disadvantage. When deciding to build your own application, which an example in this series of guides is the experiment, it is important to consider a couple of aspects: cloud security, and cloud service accuracy. In respect to the first, we reccomend making sure that data being stored in the cloud meet the requirements of your institution/research as well as checking the warranty of the chosen provider. In respect to the second, we suggest to consider the accuracy of the algorithm provided by the service for the purpose of the research but this fall outside the purpose of this workshop. Naeem et al.[<a href="#Footnotes">3</a>] discusses some of the advantages and disadvantages when using cloud computing. We report them from their study in the chart below:</p>
+<table>
+<thead><tr>
+<th style="text-align:center">Disadvantages</th>
+<th style="text-align:center">Advantages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Security in the Cloud</td>
+<td style="text-align:center">Almost Unlimited Storage</td>
+</tr>
+<tr>
+<td style="text-align:center">Technical Issues</td>
+<td style="text-align:center">Quick Development</td>
+</tr>
+<tr>
+<td style="text-align:center">Non-Interoperability</td>
+<td style="text-align:center">Cost Efficient</td>
+</tr>
+<tr>
+<td style="text-align:center">Dependency and vendor lock-in</td>
+<td style="text-align:center">Automatic Software Integration</td>
+</tr>
+<tr>
+<td style="text-align:center">Internet Required</td>
+<td style="text-align:center">Shared Resources</td>
+</tr>
+<tr>
+<td style="text-align:center">Less Reliability</td>
+<td style="text-align:center">Easy Access to Information</td>
+</tr>
+<tr>
+<td style="text-align:center">Less management</td>
+<td style="text-align:center">Mobility</td>
+</tr>
+<tr>
+<td style="text-align:center">Raised Vulnerability</td>
+<td style="text-align:center">Better Hardware Management</td>
+</tr>
+<tr>
+<td style="text-align:center">Prone to Attack</td>
+<td style="text-align:center">Backup and Recovery</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Getting-started:-first-access-to-Azure">Getting started: first access to Azure<a class="anchor-link" href="#Getting-started:-first-access-to-Azure">¶</a></h2><h3 id="Create-your-Azure-free-account">Create your Azure free account<a class="anchor-link" href="#Create-your-Azure-free-account">¶</a></h3><p>To access Azure cloud computing services, you will have to sign up for an Azure free account, if you don’t already have one. If you do not have a Microsoft account either you will be asked to create one, otherwise insert your outlook account (e.g. your_email_address@outlook.com). To create your Azure account you will be asked to add your credentials as well as a credit card account. This will not be charged unless you exceed the credit provided with the one month trial version [<a href="#Footnotes">4</a>]. We reccomend to cancel the account after the first month in case you are not interested in the service.</p>
+<p>Follow the next steps to set up a free account:</p>
+<ul>
+<li>Go to <a href="https://azure.microsoft.com/en-us/">https://azure.microsoft.com/en-us/</a> and click on <strong><code>free account</code></strong></li>
+</ul>
+<p><img alt="free_account" src="img/getting_started_free_account.PNG"></p>
+<ul>
+<li>Click on <strong><code>start free</code></strong></li>
+</ul>
+<p><img alt="start_free" src="img/getting_started_start_free.PNG"></p>
+<ul>
+<li>Create an Azure account: choose name, set password, add security info, add credit/debit card information </li>
+</ul>
+<p><img alt="create_azure_account" src="img/getting_started_create_azure_account.PNG"></p>
+<h3 id="Login-to-Azure-Dashboard-and-create-your-first-service">Login to Azure Dashboard and create your first service<a class="anchor-link" href="#Login-to-Azure-Dashboard-and-create-your-first-service">¶</a></h3><p>Once you have created your Azure free account, you just need to go to the Azure portal and login using the credentials.</p>
+<ul>
+<li>Go to <a href="https://portal.azure.com/">https://portal.azure.com/</a> and sign-in to your account to access Azure Dashboard (note: familiarize with the relevant services?)</li>
+</ul>
+<p><img alt="select_account" src="img/login_to_azure_select_account.PNG"></p>
+<p>You are now ready to deploy your first public cloud service! Follow the next steps:</p>
+<ul>
+<li>Click on <strong><code>create a resource</code></strong></li>
+</ul>
+<p><img alt="create_resource" src="img/login_to_azure_create_resource.PNG"></p>
+<ul>
+<li>Write on the bar the name of the service you want to subscribe to. For convinience we show the Storage Account that will we use in the next guide. Type  <strong><code>storage account</code></strong> in the bar and then press  <strong><code>enter</code></strong></li>
+</ul>
+<p><img alt="select_resource" src="img/login_to_azure_select_resource.PNG"></p>
+<ul>
+<li>You will be directed to the a view containing a short description of the service, as well as links to the documentation and pricing information. Click on <strong><code>create</code></strong> to start deploying the services.</li>
+</ul>
+<p><img alt="create_storage_account" src="img/login_to_azure_create_storage_account.PNG"></p>
+<ul>
+<li>Next, complete entering the following intormation and click on <strong><code>create</code></strong> once finished:  <ul>
+<li>Account name: enter lowercase and globally unique name (e.g. "mycloudstorageplayground")  </li>
+<li>Deployment model: click on Resource manager  </li>
+<li>Account kind: Storage v1</li>
+<li>Location: East US  </li>
+<li>Replication: Locally-reduntant storage (LRS)  </li>
+<li>Performance: click on Standard  </li>
+<li>Secure transfer required: Enabled  </li>
+<li>Subscription: Free Trial  </li>
+<li>Select server region: Eastus  </li>
+<li>Resource Group: create a new entering name (e.g. myresourcegroup)  </li>
+<li>Virtual networks: click on Enabled  </li>
+<li>Pin to dashboard (optional): [x]</li>
+</ul>
+</li>
+</ul>
+<p><img alt="storage_setup" src="img/login_to_azure_create_storage_account_setup.PNG"></p>
+<ul>
+<li>Once the service is deployed, you will see on your Dashbord a white box with your storage account's name. Click on the box with your <strong><code>storage_account_name</code></strong> to access the storage account interface.</li>
+</ul>
+<p><img alt="storage_account_dashboard" src="img/login_to_azure_storage_account_dashboard.PNG"></p>
+<ul>
+<li>The storage account interface shows a summary of the settings defined in the previous steps and other utilities. On the top right box you can see the region from which your service is deployied, the type of storage you have choosen as well as the type of contents you decided to store (i.e. Locally Reduntant Storage which stands for data you might use a lot and the server will know). You can also find the id of your subrscition below erased for privacy purposes.</li>
+</ul>
+<p><img alt="storage_account_interface" src="img/login_to_azure_storage_account_interface.PNG"></p>
+<h3 id="Create-API-key-to-use-Microsoft-Azure-service">Create API key to use Microsoft Azure service<a class="anchor-link" href="#Create-API-key-to-use-Microsoft-Azure-service">¶</a></h3><p>We have shown you how to login to the Azure portal and how to create a Storage Account, now it is time to retrieve the key necessary to use it. We will use the key in the next guide to make requests to Microsoft Azure using Application Programming Interface (API). The API functions as an intermediary that allows two applications to talk to each other, in our case our software and Azure SaaS. The API key allows Azure to identifies your subscription account and to bill it (unless you switch your free account to a pay as you go account your account will not be billed).</p>
+<ul>
+<li>To retrieve your Storage Account key, start from going to the dashboard and clicking on the box with your <strong><code>storage_account_name</code></strong>. Then, click on on <strong><code>Access keys</code></strong> on the side bar.</li>
+<li>Copy storage account name and key1, clicking on the icon in the left, and paste them in the script below. </li>
+</ul>
+<p><img alt="access_and_keys" src="img/create_api_access_and_keys.PNG"></p>
+<h3 id="Script:-create-a-set-of-keys-for-using-Azure-services">Script: create a set of keys for using Azure services<a class="anchor-link" href="#Script:-create-a-set-of-keys-for-using-Azure-services">¶</a></h3><p>In the next guides, we are going to poke around with several Azure services. We reccomend you to create all the services on the list below and to save the name you will give to each service and primary key in the cell below. Here is a complete list of the services that you should create:</p>
+<ul>
+<li><strong>Storage Account</strong></li>
+<li><strong>Face</strong></li>
+<li><strong>Computer Vision</strong></li>
+<li><strong>Bing Speech Recognition</strong></li>
+<li><strong>Text Analytics</strong></li>
+</ul>
+<p>When looking for a service, we recommend to click on the <strong><code>Create a Resource</code></strong> button and to copy each service name on the finder bar as shown before. This will avoid you to look for service at the time, and some headache from navigating yourself through the myriad of services available. Run the cell when you are done, and a file with your key will be automatically generated and stored into the folder public_cloud_computing/guides/keys.</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [1]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">###############################################################</span>
+<span class="c1"># copy and paste your services' account name and primary  key #</span>
+<span class="c1">###############################################################</span>
+
+<span class="c1"># STORAGE_ACCOUNT</span>
+<span class="n">STORAGE_ACCOUNT_NAME</span> <span class="o">=</span> <span class="s1">''</span> <span class="c1">#add your account name</span>
+<span class="n">STORAGE_ACCOUNT_API_KEY</span> <span class="o">=</span> <span class="s1">''</span> <span class="c1">#add your account key1</span>
+
+<span class="c1"># COGNITIVE_SCIENCE_FACE_ACCOUNT</span>
+<span class="n">FACE_ACCOUNT_NAME</span> <span class="o">=</span> <span class="s1">''</span> 
+<span class="n">FACE_API_KEY</span> <span class="o">=</span> <span class="s1">''</span> 
+
+<span class="c1"># COGNITIVE_SCIENCE_COMPUTER_VISION_ACCOUNT</span>
+<span class="n">COMPUTER_VISION_NAME</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="n">COMPUTER_VISION_API_KEY</span> <span class="o">=</span> <span class="s1">''</span>
+
+<span class="c1"># SPEECH_RECOGNITION_ACCOUNT</span>
+<span class="n">SPEECH_RECOGNITION_NAME</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="n">SPEECH_RECOGNITION_KEY</span> <span class="o">=</span> <span class="s1">''</span>
+
+<span class="c1"># TEXT_ANALYTICS_ACCOUNT</span>
+<span class="n">TEXT_ANALYTICS_NAME</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="n">TEXT_ANALYTICS_API_KEY</span> <span class="o">=</span> <span class="s1">''</span> 
+
+<span class="c1">#run this cell to write a copy of your Azure services information (NAME and API's key)</span>
+<span class="c1">#write a dictionary</span>
+<span class="n">azure_services_keys</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'STORAGE'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">STORAGE_ACCOUNT_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">STORAGE_ACCOUNT_API_KEY</span><span class="p">},</span> 
+                       <span class="s1">'FACE'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">FACE_ACCOUNT_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">FACE_API_KEY</span><span class="p">},</span>
+                       <span class="s1">'COMPUTER_VISION'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">COMPUTER_VISION_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">COMPUTER_VISION_API_KEY</span><span class="p">},</span> 
+                       <span class="s1">'SPEECH_RECOGNITION'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">SPEECH_RECOGNITION_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">SPEECH_RECOGNITION_KEY</span><span class="p">},</span>
+                       <span class="s1">'TEXT_ANALYTICS'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">TEXT_ANALYTICS_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">TEXT_ANALYTICS_API_KEY</span><span class="p">}}</span>
+
+<span class="c1">#dump the dictionary on a file and saved in the folder < /guides/keys ></span>
+<span class="c1">#import modules</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="c1">#open a .json file and copy the dictionary with all your keys</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../keys/azure_services_keys.json"</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">azure_services_keys</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+    
+<span class="c1">################################</span>
+<span class="c1"># run this cell once completed #</span>
+<span class="c1">################################</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Recap">Recap<a class="anchor-link" href="#Recap">¶</a></h2><h3 id="What-you-have-learnt">What you have learnt<a class="anchor-link" href="#What-you-have-learnt">¶</a></h3><ul>
+<li>What is cloud and its advantages</li>
+<li>Access the Azure portal</li>
+<li>How to deploy public cloud service </li>
+<li>Now that you know more about cloud, what do you think about it?</li>
+</ul>
+<h3 id="What-you-will-learn-next-guide">What you will learn next guide<a class="anchor-link" href="#What-you-will-learn-next-guide">¶</a></h3><ul>
+<li>How to use public cloud services:  <ul>
+<li>What is a cloud storage</li>
+<li>Access Azure cloud storage using Storage Explorer UI and with Python SDK</li>
+<li>Create BLOB container and Upload BLOB (Big Large Binary Objects AKA image, audio, etc.)</li>
+</ul>
+</li>
+</ul>
+<h3 id="Question-for-you">Question for you<a class="anchor-link" href="#Question-for-you">¶</a></h3><ul>
+<li>Now that you know more about cloud, what do you think about it?</li>
+<li>When would it be useful in your work, research?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Footnotes">Footnotes<a class="anchor-link" href="#Footnotes">¶</a></h5><ul>
+<li>[1] Armbrust et al, 2009. Above the Clouds: A Berkeley View of Cloud Computing  </li>
+<li>[2] Peter Mell and Timothy Grance, 2011. The NIST Definition of Cloud Computing: recommendations of the National Institute of Standards and Technology  </li>
+<li>[3] Naeem et al, 2016. Cluster Computing vs Cloud Computing: a comparison and overview  </li>
+<li>[4] At subscription of a free account you will receive 200 dollars for 30 days to try pay as you go cloud services and a free account for a year. Once you exceed 200 dollars or the 30 days free trial will expired you will be asked to upgrade your subscription.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#import library to display notebook as HTML</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span>
+
+<span class="c1">#path to .ccs style script</span>
+<span class="n">cur_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s2">"__file__"</span><span class="p">))</span>
+<span class="n">new_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">'..</span><span class="se">\\</span><span class="s1">..</span><span class="se">\\</span><span class="s1">styles</span><span class="se">\\</span><span class="s1">custom_styles_public_cloud_computing.css'</span><span class="p">,</span> <span class="n">cur_path</span><span class="p">)</span>
+
+<span class="c1">#function to display notebook</span>
+<span class="k">def</span> <span class="nf">css</span><span class="p">():</span>
+    <span class="n">style</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">new_path</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">HTML</span><span class="p">(</span><span class="n">style</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1313,24 +1695,12 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [2]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
-<span class="n">summation</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">summation</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#run this cell to apply HTML style</span>
+<span class="n">css</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>11
-</pre>
-</div>
 </div>
 </div>
 </div>

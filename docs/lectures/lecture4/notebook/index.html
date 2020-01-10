@@ -9,12 +9,12 @@
     />
     <meta
       name="description"
-      content="Spring 2020 - Harvard University, Institute for Applied Computational Science. Lecture 4: Notebook 4"
+      content="Spring 2020 - Harvard University, Institute for Applied Computational Science. Lecture 4: Data Science with Python and Dask"
     />
     <meta name="author" content="Pavlos Protopapas" />
 <meta
   name="keywords"
-  content="TOPIC_10, TOPIC_11, TOPIC_12"
+  content="Dask, Python, Parallel Computing"
 />
 
     <!-- Bootstrap CSS -->
@@ -53,7 +53,7 @@
     />
     <link rel="stylesheet" href="../../../style/css/iacs.css" />
 
-    <title>Harvard AC295 | Lecture 4: Notebook 4</title>
+    <title>Harvard AC295 | Lecture 4: Data Science with Python and Dask</title>
 
     <style>
       .navbar {
@@ -135,12 +135,12 @@
  <div>
   <div class="float-left">
     <p>
-      Key Word(s):       <a href="../../../pages/materials.html#TOPIC_10"
-        >TOPIC_10</a
-      >,       <a href="../../../pages/materials.html#TOPIC_11"
-        >TOPIC_11</a
-      >,       <a href="../../../pages/materials.html#TOPIC_12"
-        >TOPIC_12</a
+      Key Word(s):       <a href="../../../pages/materials.html#Dask"
+        >Dask</a
+      >,       <a href="../../../pages/materials.html#Python"
+        >Python</a
+      >,       <a href="../../../pages/materials.html#Parallel Computing"
+        >Parallel Computing</a
       >     </p>
   </div>
   <div class="float-right">
@@ -1300,12 +1300,322 @@ h6:hover .anchor-link {
 
 .ansi-bold { font-weight: bold; }
 </style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lecture-4:-Data-Science-with-Python-and-Dask">Lecture 4: Data Science with Python and Dask<a class="anchor-link" href="#Lecture-4:-Data-Science-with-Python-and-Dask">¶</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dask is a useful tools 1. Add general description.</p>
+<p>Dask is a useful tools 2. Add infrastructure/platform description. Link to documentation <a href="https://dask.org/">Dask</a> and why it is cool <a href="https://twitter.com/dask_dev">Dask developer community on twitter</a>.</p>
+<p>Dask is a useful tools 3. a) What you can do you, b) what other advanced things people do.</p>
+<p>We'll go over the basics of some Dask services, but we should point out that a <em>lot</em> of talented people have given tutorials, check'em out.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">¶</a></h1><ul>
+<li><a href="#Lecture-4:-Data-Science-with-Python-and-Dask">Lecture 4: Data Science with Python and Dask</a><ul>
+<li><a href="#Part-1:-Scalable-computing">Part 1: Scalable computing</a><ul>
+<li><a href="#1.1-Dask">1.1 Dask</a></li>
+<li><a href="#xxx">xxx</a></li>
+<li><a href="#xxx">xxx</a></li>
+</ul>
+</li>
+<li><a href="#Part-2">Part 2</a><ul>
+<li><a href="#xxx">xxx</a></li>
+<li><a href="#xxx">xxx</a></li>
+<li><a href="#xxx">xxx</a></li>
+</ul>
+</li>
+<li><a href="#Part-3">Part 3</a><ul>
+<li><a href="#xxx">xxx</a></li>
+<li><a href="#xxx">xxx</a></li>
+<li><a href="#xxx">xxx</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote><blockquote><p>PRESENTATION</p>
+<p><part 1: the building block of scalable computing></p>
+<p><chapter 1: why scalable computing matters></p>
+<p><1.1 Why Dask></p>
+<p><1.2 Cooking with DAGs></p>
+<p><1.3 Scaling out, concurrency, and autorecovery></p>
+</blockquote>
+</blockquote>
+<p><chapter 2: introducing dask></p>
+<p><part 2: working with structured data using dask dataframes></p>
+<p><2.1 Hello Dask: A first look at the DataFrame API></p>
+<p><2.2 Visualizing DAG></p>
+<p><2.3 Task Scheduling></p>
+<p><part 2: working with structured data using dask dataframes></p>
+<p><chapter 3: introducing dask dataframes></p>
+<p><3.1 Why to use DataFrames></p>
+<p><3.2 Dask and Pandas: DataFrame partitioning and shuffle></p>
+<p><3.3 Limitations></p>
+<blockquote><blockquote><blockquote><p>HANDS ON NOTEBOOK</p>
+<p><chapter 4: loading data into dataframes></p>
+<p><4.1 Read data, datasets, and datatypes></p>
+<p><4.2 Reading from relational database, HDFS, and S3></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><chapter 5: cleaning and transforming dataframes></p>
+<p><5.1 Indexes, selecting, and dropping>
+    <5.1.1 Filtering and Reindexing></p>
+<p><5.2 Joining, concatenating, and unioning>
+    <5.2.1 Recording data></p>
+<p><5.3 Elementwise operations></p>
+<p><5.4 Dealing with missing values></p>
+<p><chapter 6: summarizing and analyzing dataframes></p>
+<p><6.1 Descriptive Statistics></p>
+<p><6.2 Built-In aggregate functions></p>
+<p><6.3 Custom aggregate functions></p>
+<p><6.4 (Rolling window) functions></p>
+<p><chapter 7: visualizing dataframes with seaborn></p>
+<p><7.1 Preare-reduce-collect-plot></p>
+<p><7.2 Continuous and categorial></p>
+<p><7.3 Density plots></p>
+<p><7.4 Random samples></p>
+<p><7.5 Heatmap></p>
+<blockquote><blockquote><blockquote><p>PRACTICUM?</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><chapter 8: visualizing location data with datashader></p>
+<blockquote><blockquote><blockquote><p>SHOW CASE</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><part 3: extending and deploying dask></p>
+<p><chapter 9: working with bags and arrays></p>
+<p><9.1 Reading and parsing unstructured data with Bags>
+    <9.1.1 Selecting and viewing data from a Bag>
+    <9.1.2 Common parsing issue>
+    <9.1.3 Delimiters></p>
+<p><9.2 Transforming, filtering, and folding>
+    <9.2.1 Map, filter, and aggregate functions (foldby)> 
+    <9.2.2 Building Arrays from bags>
+    <9.2.3 Summary stats on bags: parallel text analysis>
+        <9.2.3.1 Bigrams>
+        <9.2.3.2 Tokens and filtering stopwords>
+        <9.2.3.2 Analyze bigrams></p>
+<p><chapter 10: machine learning with dask-ml></p>
+<p><10.1 Linear Models with Dask-ML></p>
+<p><10.2 Evaluating and tuning Dask-ML models></p>
+<p><10.3 Persisting Dask-ML models></p>
+<blockquote><blockquote><blockquote><p>EXERCISE: YOU LEARNED IT, NOW DO IT. REPRODUCE A PAPER FROM READING LIST</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><chapter 11: scaling and deploying dask></p>
+<p><11.1 Building a Dask cluster on Amazon AWS with Docker>
+    <11.1.1 to 11.1.7></p>
+<p><11.2 Running and monitoring Dask jobs on a cluster></p>
+<p><11.3 Cleaning up the Dask clusters on AWS></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-1:-Scalable-computing">Part 1: Scalable computing<a class="anchor-link" href="#Part-1:-Scalable-computing">¶</a></h2><h3 id="Dask">Dask<a class="anchor-link" href="#Dask">¶</a></h3><ul>
+<li>what makes it unique: <ul>
+<li>allow to work with larger datasets making it possible to parallelize computation;</li>
+<li>it is helpful when size increase and even "simple" sorting and aggregating spill on persisten memory;</li>
+<li>the cost of is a more complex infrastructue, which Dask API simplify for us;</li>
+<li>Dask consists of several different components and APIs, which can be categorized into three layers: <ul>
+<li>the scheduler;</li>
+<li>low-level APIs; </li>
+<li>and high-level APIs. </li>
+</ul>
+</li>
+<li>easy to learn, flexibility make it a more attractive solution for data scientists with a background in the Python Open Data Science Stack;</li>
+<li>it applies distributed computing concepts.</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead><tr>
+<th>Dataset type</th>
+<th>Size range</th>
+<th>Fits in RAM?</th>
+<th>Fits on local disk?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small dataset</td>
+<td>Less than 2–4 GB</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Medium dataset</td>
+<td>Less than 2 TB</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Large dataset</td>
+<td>Greater than 2 TB</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Adapted from <strong>Data Science with Python and Dask</strong></p>
+<p><img src="IMG/Dask_components_&amp;_layers.PNG" width="480"></p>
+<p>Adapted from <strong>Data Science with Python and Dask</strong></p>
+<ul>
+<li>apply concept from acyclic graphs to control parallel execution of code</li>
+</ul>
+<h2 id="xxx">xxx<a class="anchor-link" href="#xxx">¶</a></h2><p>Paragraph 2</p>
+<h3 id="xxx">xxx<a class="anchor-link" href="#xxx">¶</a></h3><p>Paragraph 3</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="OLD-STUFF">OLD STUFF<a class="anchor-link" href="#OLD-STUFF">¶</a></h2><p>Cloud Computing refers to both the applications delivered as services over the Internet and the hardware/systems software in the datacenters that provide those services. The datacenter hardware and software is what we will call a <em>Cloud</em>. When a Cloud is made available to the public (through pay-as-you-go services), it is called a Public Cloud; the service being sold from the datacenter to the provider such as Microsoft, Google, Amazon or IBM (which might or not might be the same) called computing utility [<a href="#Footnotes">1</a>] and the one sold from provider to user that we will refer as a web application or more in general a service. Current examples of public computing services include AmazonWeb Services, Google AppEngine, and Microsoft Azure. A differenet deployment system from the public is the private. The private Cloud refers to internal datacenters of a business or other organization that are not made available to the public. The figure below shows the roles of the people as users or providers of different layers of the Cloud.</p>
+<p><img alt="cloud_basics_from_article_1" src="img/cloud_basics.PNG"></p>
+<p><a><center> Image adapted from Armbust et al., 2009 </center></a></p>
+<p>The National Institute of Standards and Technology (NIST) defines cloud as [<a href="#Footnotes">2</a>]:</p>
+<p><em>“a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.”</em></p>
+<p>Cloud computing has 5 essential characteristics:</p>
+<ol>
+<li>Measured Service</li>
+<li>Rapid Elasticity</li>
+<li>Broad Network Access</li>
+<li>Resource Pooling</li>
+<li>On Demand Self Service</li>
+</ol>
+<p>You can think about cloud computing as composition of three different areas/models:</p>
+<p><img alt="Iass_Paas_SaaS_image" src="img/Iass_Paas_SaaS_image.PNG"></p>
+<ul>
+<li>The Infrastructure as a Service (<strong>IaaS</strong>) is a cloud of resources provided to users. IaaS provides the basic functionality of storage and computing as service consisting in network servers, storage systems, network instrumentality, and information headquarters.</li>
+<li>The Platform as a Service (<strong>PaaS</strong>) is a development environment provided as a service. These advanced levels of alternative service can be designed by end-users. PaaS offers virtualized servers that multiple users work on applications or grow innovative applications, with no having to concern about keeping operating systems, server hardware, equalization or weight power calculation.</li>
+<li>The Software as a Service (<strong>SaaS</strong>) is an application that is offered to consumers using the Internetwork. A single case of service works in the cloud and multiple end users services. An example of Cloud Computing is Software as a Service (SaaS), where you input data on software and the data is transformed remotely through a software interface without your computer being involved. Thus SaaS eliminates client fears on storage, server applications, application development, and related common concerns of IT. </li>
+</ul>
+<p>In this to tutorial we are going to show you examples encompasses PaaS, when you will build the experiment using the two tutorials, and SaaS, when you will learn how to use the cloud services in the three guides.</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [1]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">###############################################################</span>
+<span class="c1"># copy and paste your services' account name and primary  key #</span>
+<span class="c1">###############################################################</span>
+
+<span class="c1"># STORAGE_ACCOUNT</span>
+<span class="n">STORAGE_ACCOUNT_NAME</span> <span class="o">=</span> <span class="s1">''</span> <span class="c1">#add your account name</span>
+<span class="n">STORAGE_ACCOUNT_API_KEY</span> <span class="o">=</span> <span class="s1">''</span> <span class="c1">#add your account key1</span>
+
+<span class="c1"># COGNITIVE_SCIENCE_FACE_ACCOUNT</span>
+<span class="n">FACE_ACCOUNT_NAME</span> <span class="o">=</span> <span class="s1">''</span> 
+<span class="n">FACE_API_KEY</span> <span class="o">=</span> <span class="s1">''</span> 
+
+<span class="c1"># COGNITIVE_SCIENCE_COMPUTER_VISION_ACCOUNT</span>
+<span class="n">COMPUTER_VISION_NAME</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="n">COMPUTER_VISION_API_KEY</span> <span class="o">=</span> <span class="s1">''</span>
+
+<span class="c1"># SPEECH_RECOGNITION_ACCOUNT</span>
+<span class="n">SPEECH_RECOGNITION_NAME</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="n">SPEECH_RECOGNITION_KEY</span> <span class="o">=</span> <span class="s1">''</span>
+
+<span class="c1"># TEXT_ANALYTICS_ACCOUNT</span>
+<span class="n">TEXT_ANALYTICS_NAME</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="n">TEXT_ANALYTICS_API_KEY</span> <span class="o">=</span> <span class="s1">''</span> 
+
+<span class="c1">#run this cell to write a copy of your Azure services information (NAME and API's key)</span>
+<span class="c1">#write a dictionary</span>
+<span class="n">azure_services_keys</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'STORAGE'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">STORAGE_ACCOUNT_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">STORAGE_ACCOUNT_API_KEY</span><span class="p">},</span> 
+                       <span class="s1">'FACE'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">FACE_ACCOUNT_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">FACE_API_KEY</span><span class="p">},</span>
+                       <span class="s1">'COMPUTER_VISION'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">COMPUTER_VISION_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">COMPUTER_VISION_API_KEY</span><span class="p">},</span> 
+                       <span class="s1">'SPEECH_RECOGNITION'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">SPEECH_RECOGNITION_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">SPEECH_RECOGNITION_KEY</span><span class="p">},</span>
+                       <span class="s1">'TEXT_ANALYTICS'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'NAME'</span><span class="p">:</span> <span class="n">TEXT_ANALYTICS_NAME</span><span class="p">,</span> <span class="s1">'API_KEY'</span><span class="p">:</span> <span class="n">TEXT_ANALYTICS_API_KEY</span><span class="p">}}</span>
+
+<span class="c1">#dump the dictionary on a file and saved in the folder < /guides/keys ></span>
+<span class="c1">#import modules</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="c1">#open a .json file and copy the dictionary with all your keys</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"../keys/azure_services_keys.json"</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">azure_services_keys</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+    
+<span class="c1">################################</span>
+<span class="c1"># run this cell once completed #</span>
+<span class="c1">################################</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Recap">Recap<a class="anchor-link" href="#Recap">¶</a></h2><h3 id="What-you-have-learnt">What you have learnt<a class="anchor-link" href="#What-you-have-learnt">¶</a></h3><ul>
+<li>What is cloud and its advantages</li>
+<li>Access the Azure portal</li>
+<li>How to deploy public cloud service </li>
+<li>Now that you know more about cloud, what do you think about it?</li>
+</ul>
+<h3 id="What-you-will-learn-next-guide">What you will learn next guide<a class="anchor-link" href="#What-you-will-learn-next-guide">¶</a></h3><ul>
+<li>How to use public cloud services:  <ul>
+<li>What is a cloud storage</li>
+<li>Access Azure cloud storage using Storage Explorer UI and with Python SDK</li>
+<li>Create BLOB container and Upload BLOB (Big Large Binary Objects AKA image, audio, etc.)</li>
+</ul>
+</li>
+</ul>
+<h3 id="Question-for-you">Question for you<a class="anchor-link" href="#Question-for-you">¶</a></h3><ul>
+<li>Now that you know more about cloud, what do you think about it?</li>
+<li>When would it be useful in your work, research?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Footnotes">Footnotes<a class="anchor-link" href="#Footnotes">¶</a></h5><ul>
+<li>[1] Armbrust et al, 2009. Above the Clouds: A Berkeley View of Cloud Computing  </li>
+<li>[2] Peter Mell and Timothy Grance, 2011. The NIST Definition of Cloud Computing: recommendations of the National Institute of Standards and Technology  </li>
+<li>[3] Naeem et al, 2016. Cluster Computing vs Cloud Computing: a comparison and overview  </li>
+<li>[4] At subscription of a free account you will receive 200 dollars for 30 days to try pay as you go cloud services and a free account for a year. Once you exceed 200 dollars or the 30 days free trial will expired you will be asked to upgrade your subscription.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#import library to display notebook as HTML</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span>
+
+<span class="c1">#path to .ccs style script</span>
+<span class="n">cur_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s2">"__file__"</span><span class="p">))</span>
+<span class="n">new_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">'..</span><span class="se">\\</span><span class="s1">..</span><span class="se">\\</span><span class="s1">styles</span><span class="se">\\</span><span class="s1">custom_styles_public_cloud_computing.css'</span><span class="p">,</span> <span class="n">cur_path</span><span class="p">)</span>
+
+<span class="c1">#function to display notebook</span>
+<span class="k">def</span> <span class="nf">css</span><span class="p">():</span>
+    <span class="n">style</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">new_path</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">HTML</span><span class="p">(</span><span class="n">style</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1313,24 +1623,12 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [2]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
-<span class="n">summation</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">summation</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#run this cell to apply HTML style</span>
+<span class="n">css</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>11
-</pre>
-</div>
 </div>
 </div>
 </div>
