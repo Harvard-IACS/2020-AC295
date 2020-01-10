@@ -27,7 +27,7 @@ pre {
 ## List of Contents
 - [Prerequisites](#Prerequisites)
 - [Software](#Software)
-- [Course Activities](#Course-Activities)
+- [Course Structure Activities](#Course-Structure-Activities)
 - [Resources](#Resources)
 - [Assignments](#Assignments)
 - [Getting Help](#Getting-Help)
@@ -48,9 +48,9 @@ You are expected to be fluent in programming (Python), statistics knowledge at t
 We will be using a variety of software primarily Python 3, Pytorch, Tensorflow, Docker, etc. More details in class.
 
 <hr>
-<a name='Course-Activities'>
+<a name='Course-Structure-Activities'>
 
-## Course Activities
+## Course Structure and Activities
 
 The course is organized in three modules each one 4 weeks long. Each module is structured in three types of activities and they are: **Lectures**, **Reading Discussion**, and **Practicum**. Each activity requires the students to complete different assignments in the form of exercise/homework, quizzes, reading assignment and presentation (see Assignments below). During the first 3 weeks of each modules students will attend Lecture on Tuesday and Reading Discussion on Thursday. The fourth week of each module will be Practicum on Tuesday and Thursday. **Attendance is mandatory**.
 
@@ -78,33 +78,33 @@ A brief list of the resources can be found below:
 
 The **final grade** will be calculated using the following weights for each assignment:
 
-**Exercise**
+**Exercises**
 
 There are 9 homework to complete. They will be released at the end of each regular week Lecture and due the next one. The homework are graded on a scale 1 to 5, where 5 is the highest grade.
 
 **Quizzes** 
 
-There will be a quiz at the beginning of each Seminar/Reading Club class based on what was discussed in lecture and contained in the assigned readings. Students will have a limited amount of time to complete the quiz. 40% of the quizzes will be dropped before calculating your final grade.
+There will be a quiz at the beginning of each Reading Discussion based on what was discussed during lecture. The question will cover some of the material from Reading List and students will access them using [Ed Platform](https://us.edstem.org/courses/160/sway/)host/444. Students will have a limited amount of time to complete the quiz. 40% of the quizzes will be dropped before calculating your final grade.
 
-**Presentation**
+**Presentations**
 
 Every Reading Discussion two groups will be presenting the reading material assingned at the beginning of the week.
 
-**Practicum**
+**Practicums**
 
 There will be a final group project due during Exams period encompassing all the material learned in class.
 
-**Project**
+**Projects**
 
 There will be a final group project due during Exams period encompassing all the material learned in class.
 
 |Assignment|Final Grade Weight|
 |-----|-----|
 |Quizzes|  9%|  
-|Exercise| 9%|
-|Presentation| 15%| 
-|Practicum|  45%| 
-|Project|  20%|   
+|Exercises| 9%|
+|Presentations| 15%| 
+|Practicums|  45%| 
+|Projects|  20%|   
 |Participation|  2%|       
 |**Total**|  **100%**|
 
