@@ -6,9 +6,9 @@ Date: 2020-01-07
 |Week|Lecture (Tuesday)|Lecture (Thursday)|Assignment (R:release - D:due)|
 |-----|-----|-----|-----|
 |1|[Lecture 1: Introduction]({filename}/lectures/lecture1/index.md)|[Set up]({filename}/resources/resource1/index.md)|No assignment||
-|2|[Lecture 2: 	Virtual environments, virtual boxes, containers]({filename}/lectures/lecture2/index.md)|[Reading Discussion 1: Title]({filename}/readings/reading1/index.md)|R:EX1||
-|3|[Lecture 3: Kubernetes]({filename}/lectures/lecture3/index.md)|[Reading Discussion 2: Container Orchestration]({filename}/readings/reading2/index.md)|R:EX2 - D:EX1||
-|4|[Lecture 4: Dask]({filename}/lectures/lecture4/index.md)|[Reading Discussion 3: Parallel Processing]({filename}/readings/reading3/index.md)|R:EX3 - D:EX2||
+|2|[Lecture 2: 	Virtual environments, virtual machines, containers]({filename}/lectures/lecture2/index.md)|[Reading Discussion 1: Virtual environments, virtual machines, containers]({filename}/readings/reading1/index.md)|R:EX1||
+|3|[Lecture 3: Kubernetes]({filename}/lectures/lecture3/index.md)|[Reading Discussion 2: Kubernetes]({filename}/readings/reading2/index.md)|R:EX2 - D:EX1||
+|4|[Lecture 4: Dask]({filename}/lectures/lecture4/index.md)|[Reading Discussion 3: Dask]({filename}/readings/reading3/index.md)|R:EX3 - D:EX2||
 |5|[Practicum: Practicum 1]({filename}/practicums/practicum1/index.md)|[Practicum: Practicum 1]({filename}/practicums/practicum1/index.md)|No assignment||
 |6|[Lecture 5: Title]({filename}/lectures/lecture5/index.md)|[Reading 4: Title]({filename}/readings/reading4/index.md)|R:EX4 - D:EX3||
 |7|[Lecture 6: Title]({filename}/lectures/lecture6/index.md)|[Reading 5: Title]({filename}/readings/reading5/index.md)|R:EX5 - D:EX4||
