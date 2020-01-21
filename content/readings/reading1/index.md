@@ -1,16 +1,23 @@
-Title: Reading 1 
+Title: Reading Discussion 1: Environments, Virtual Machines and Containers 
 Category: readings
 Date: 2020-01-07
 Author: Pavlos Protopapas
 Slug: reading1
-Tags: TOPIC_1, TOPIC_2, TOPIC_3
+Tags: Virtual Environments, Virtual Machines, Containers
 
-## Reading
+## Selected Readings for:
+### Lecture
+1. [Getting started with Python environments (using Conda)](https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307)
+2. [Creating Python Virtual Environments with Conda: Why and How](https://heartbeat.fritz.ai/creating-python-virtual-environments-with-conda-why-and-how-180ebd02d1db)
+3. [Virtual Machine Wikipedia](https://en.wikipedia.org/wiki/Virtual_machine)
+4. [How to Install a Totally Free Windows 10 OS on Your Mac for Fun and Profit](https://towardsdatascience.com/how-to-install-a-free-windows-virtual-machine-on-your-mac-bf7cbc05888e)
+5. [Data Science for Startups: Containers](https://towardsdatascience.com/data-science-for-startups-containers-d1d785bfe5b)
+6. [Docker for Data Scientists](https://towardsdatascience.com/docker-for-data-scientists-5732501f0ba4)
 
-PAPER_NAME_1: [LINK_1](https://arxiv.org/abs/1411.1792)
-PAPER_NAME_2: [LINK_2](https://arxiv.org/abs/1411.1792)
-PAPER_NAME_3: [LINK_3](https://arxiv.org/abs/1411.1792)
-
-## Tool
-
-TOOL_NAME_1: [LINK_1](https://docs.continuum.io/anaconda/)
+### Quiz and Presentation
+7. [Docker: Lightweight Linux Containers for Consistent Development and
+Deployment](https://www.seltzer.com/margo/teaching/CS508.19/papers/merkel14.pdf)
+8. [Comparison of different Linux containers](https://ieeexplore-ieee-org.ezp-prod1.hul.harvard.edu/abstract/document/8075934)
+9. [Singularity: Scientific containers for mobility of compute](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177459)
+10. [Performance Evaluation of Container-based Virtualization for High
+Performance Computing Environments](https://arxiv.org/pdf/1709.10140.pdf)
