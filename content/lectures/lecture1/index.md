@@ -3,12 +3,13 @@ Category: lectures
 Date: 2020-01-07
 Author: Andrea Porelli
 Slug: lecture1
-Tags: TOPIC_1, TOPIC_2, TOPIC_3
+Tags: Advance Practical Data Science
 
 ## Slides
 
-- [Lecture 1: Title]({attach}presentation/lecture1.pdf) 
+- [Lecture 1: Introduction]({attach}presentation/lecture1_draft.pdf) 
 
-## Jupyter Notebooks
+## Forms
 
-- [Lecture 1: Title]({filename}notebook/lecture1.ipynb) 
+- [Form: Make Group](https://add_link_to_form) 
+- [Form: Sign Up Presentation](https://add_link_to_form)
