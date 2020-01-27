@@ -54,7 +54,7 @@ pre {
 <br> 
 <strong>Lectures: Tuesday </strong> and <strong>Thursday</strong> 4:30‐5:45 pm in Cruft 309
 <br> 
-<strong>TFs:</strong> Michael Emanuel, Andrea Porelli
+<strong>TFs:</strong> Michael Emanuel, Andrea Porelli, Giulia Zerbini
 <br> 
 <strong>Office Hours:</strong> TBD
 <br/>

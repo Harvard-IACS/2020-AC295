@@ -88,7 +88,7 @@ There will be a quiz at the beginning of each Reading Discussion based on what w
 
 **Presentations**
 
-Every Reading Discussion two groups will be presenting the reading material assingned at the beginning of the week.
+Every Reading Discussion two groups will be presenting the reading material assingned at the beginning of the week [Guidelines](https://docs.google.com/document/d/1DqzJOdHloA8GXx7W7gumasVoNWVGV-VYb7gOFp7pcmI/edit#heading=h.6eygvu5z516).
 
 **Practicums**
 
