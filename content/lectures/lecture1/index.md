@@ -3,7 +3,7 @@ Category: lectures
 Date: 2020-01-07
 Author: Andrea Porelli
 Slug: lecture1
-Tags: Advance Practical Data Science
+Tags: Advanced Practical Data Science
 
 ## Slides
 
@@ -11,5 +11,6 @@ Tags: Advance Practical Data Science
 
 ## Forms
 
-- [Form: Make Group](https://add_link_to_form) 
-- [Form: Sign Up Presentation](https://add_link_to_form)
+- [Form: Make Group](https://docs.google.com/spreadsheets/d/1j52h9a9KgHjv2M92_HE_oDBSfcsKcknUZikXO8_TllQ/edit?usp=sharing) 
+- [Form: Sign Up Presentation](https://docs.google.com/spreadsheets/d/1Ngos6zKgufKXObvUCIKo4MaAjyuWwlyT4yFhDJczGXk/edit?usp=sharing)
+
