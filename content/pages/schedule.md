@@ -2,6 +2,7 @@ Title: Schedule
 Slug: schedule
 Date: 2020-01-28
 
+
 |Week|Lecture (Tuesday)|Lecture (Thursday)|Assignment (R:release - D:due)|
 |-----|-----|-----|-----|
 |1|[Lecture 1: Introduction]({filename}/lectures/lecture1/index.md)|[Set up]({filename}/resources/resource1/index.md)|No assignment||
