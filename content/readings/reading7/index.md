@@ -1,16 +1,17 @@
-Title: Reading 7 
+Title: Reading Discussion 7: Introduction and Overview of Viz for Deep Models
 Category: readings
 Date: 2020-01-07
 Author: Pavlos Protopapas
 Slug: reading7
-Tags: TOPIC_19, TOPIC_20, TOPIC_21
+Tags: 
 
-## Reading
+## Selected Readings
+#### Expository
+- [Google "What If..."](https://pair-code.github.io/what-if-tool/), [The What-If Tool: Interactive Probing of Machine Learning Models](https://arxiv.org/pdf/1907.04135.pdf)
+- [TensorBoard](https://www.tensorflow.org/tensorboard), [Using Tensorboard](https://medium.com/neuronio/using-tensorboard-e3906a5798e6)
+- [Visualizing MNIST: An Exploration of Dimensionality Reduction](https://colah.github.io/posts/2014-10-Visualizing-MNIST/)
 
-PAPER_NAME_1: [LINK_1](https://arxiv.org/abs/1411.1792)
-PAPER_NAME_2: [LINK_2](https://arxiv.org/abs/1411.1792)
-PAPER_NAME_3: [LINK_3](https://arxiv.org/abs/1411.1792)
-
-## Tool
-
-TOOL_NAME_1: [LINK_1](https://docs.continuum.io/anaconda/)
+#### Research
+- [Visual Analytics in Deep Learning](https://arxiv.org/pdf/1801.06889.pdf)
+- [Why Should I Trust You?” Explaining the Predictions of Any Classifier](https://arxiv.org/pdf/1602.04938.pdf)
+- [Interpretability Beyond Feature Attribution](https://arxiv.org/pdf/1711.11279.pdf)
