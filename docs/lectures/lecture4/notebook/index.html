@@ -1262,7 +1262,45 @@ h6:hover .anchor-link {
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+<style type="text/css">
+/* Temporary definitions which will become obsolete with Notebook release 5.0 */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-bold { font-weight: bold; }
+</style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Lecture-4:-Data-Science-with-Python-and-Dask">Lecture 4: Data Science with Python and Dask<a class="anchor-link" href="#Lecture-4:-Data-Science-with-Python-and-Dask">¶</a></h1>
@@ -1435,7 +1473,7 @@ h6:hover .anchor-link {
 </tbody>
 </table>
 <p>Adapted from <strong>Data Science with Python and Dask</strong></p>
-<p><img src="IMG/Dask_components_&amp;_layers.PNG" width="480" /></p>
+<p><img src="IMG/Dask_components_&amp;_layers.PNG" width="480"></p>
 <p>Adapted from <strong>Data Science with Python and Dask</strong></p>
 <ul>
 <li>apply concept from acyclic graphs to control parallel execution of code</li>
@@ -1449,7 +1487,7 @@ h6:hover .anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="OLD-STUFF">OLD STUFF<a class="anchor-link" href="#OLD-STUFF">¶</a></h2><p>Cloud Computing refers to both the applications delivered as services over the Internet and the hardware/systems software in the datacenters that provide those services. The datacenter hardware and software is what we will call a <em>Cloud</em>. When a Cloud is made available to the public (through pay-as-you-go services), it is called a Public Cloud; the service being sold from the datacenter to the provider such as Microsoft, Google, Amazon or IBM (which might or not might be the same) called computing utility [<a href="#Footnotes">1</a>] and the one sold from provider to user that we will refer as a web application or more in general a service. Current examples of public computing services include AmazonWeb Services, Google AppEngine, and Microsoft Azure. A differenet deployment system from the public is the private. The private Cloud refers to internal datacenters of a business or other organization that are not made available to the public. The figure below shows the roles of the people as users or providers of different layers of the Cloud.</p>
-<p><img alt="cloud_basics_from_article_1" src="img/cloud_basics.PNG" /></p>
+<p><img alt="cloud_basics_from_article_1" src="img/cloud_basics.PNG"></p>
 <p><a><center> Image adapted from Armbust et al., 2009 </center></a></p>
 <p>The National Institute of Standards and Technology (NIST) defines cloud as [<a href="#Footnotes">2</a>]:</p>
 <p><em>“a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.”</em></p>
@@ -1462,7 +1500,7 @@ h6:hover .anchor-link {
 <li>On Demand Self Service</li>
 </ol>
 <p>You can think about cloud computing as composition of three different areas/models:</p>
-<p><img alt="Iass_Paas_SaaS_image" src="img/Iass_Paas_SaaS_image.PNG" /></p>
+<p><img alt="Iass_Paas_SaaS_image" src="img/Iass_Paas_SaaS_image.PNG"></p>
 <ul>
 <li>The Infrastructure as a Service (<strong>IaaS</strong>) is a cloud of resources provided to users. IaaS provides the basic functionality of storage and computing as service consisting in network servers, storage systems, network instrumentality, and information headquarters.</li>
 <li>The Platform as a Service (<strong>PaaS</strong>) is a development environment provided as a service. These advanced levels of alternative service can be designed by end-users. PaaS offers virtualized servers that multiple users work on applications or grow innovative applications, with no having to concern about keeping operating systems, server hardware, equalization or weight power calculation.</li>
