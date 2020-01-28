@@ -5,7 +5,7 @@ Date: 2020-01-28
 |Week|Lecture (Tuesday)|Lecture (Thursday)|Assignment (R:release - D:due)|
 |-----|-----|-----|-----|
 |1|[Lecture 1: Introduction]({filename}/lectures/lecture1/index.md)|[Set up]({filename}/resources/resource1/index.md)|No assignment||
-|2|[Lecture 2: 	Virtual Environments, Virtual Boxes, and Containers]({filename}/lectures/lecture2/index.md)|[Reading Discussion 1]({filename}/readings/reading1/index.md)|R:EX1||
+|2|[Lecture 2: Virtual Environments, Virtual Boxes, and Containers]({filename}/lectures/lecture2/index.md)|[Reading Discussion 1]({filename}/readings/reading1/index.md)|R:EX1||
 |3|[Lecture 3: Kubernetes]({filename}/lectures/lecture3/index.md)|[Reading Discussion 2]({filename}/readings/reading2/index.md)|R:EX2 - D:EX1||
 |4|[Lecture 4: Dask]({filename}/lectures/lecture4/index.md)|[Reading Discussion 3]({filename}/readings/reading3/index.md)|R:EX3 - D:EX2||
 |5|[Practicum: Practicum 1]({filename}/practicums/practicum1/index.md)|[Practicum: Practicum 1]({filename}/practicums/practicum1/index.md)|No assignment||
