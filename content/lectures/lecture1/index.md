@@ -7,7 +7,7 @@ Tags: Advanced Practical Data Science
 
 ## Slides
 
-- [Lecture 1: Introduction]({attach}presentation/lecture1_draft.pdf) 
+- [Lecture 1: Introduction]({attach}presentation/lecture1.pdf) 
 
 ## Forms
 
