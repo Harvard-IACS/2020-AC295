@@ -1,16 +1,15 @@
-Title: Reading 5 
+Title: Reading Discussion 5: Transfer Learning across Tasks
 Category: readings
 Date: 2020-01-07
 Author: Pavlos Protopapas
 Slug: reading5
-Tags: TOPIC_13, TOPIC_14, TOPIC_15
+Tags:  
 
-## Reading
+## Selected Readings
+#### Expository
+- [Transfer Learning using Mobilenet and Keras](https://towardsdatascience.com/transfer-learning-using-mobilenet-and-keras-c75daf7ff299)
+- [Image Classification using Features Extracted by Transfer Learning in Keras](https://www.alibabacloud.com/blog/part-3-image-classification-using-features-extracted-by-transfer-learning-in-keras_595291)
+- [Transfer learning with a pretrained ConvNet](https://www.tensorflow.org/tutorials/images/transfer_learning)
 
-PAPER_NAME_1: [LINK_1](https://arxiv.org/abs/1411.1792)
-PAPER_NAME_2: [LINK_2](https://arxiv.org/abs/1411.1792)
-PAPER_NAME_3: [LINK_3](https://arxiv.org/abs/1411.1792)
-
-## Tool
-
-TOOL_NAME_1: [LINK_1](https://docs.continuum.io/anaconda/)
+#### Research
+- [LINK_1](https://add_link)
