@@ -1,6 +1,6 @@
 Title: Reading Discussion 2: Kubernetes 
 Category: readings
-Date: 2020-01-07
+Date: 2020-01-08
 Author: Pavlos Protopapas
 Slug: reading2
 Tags: Kubernetes, Containers, Cloud

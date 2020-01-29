@@ -1,6 +1,6 @@
 Title: Reading Discussion 7: Introduction and Overview of Viz for Deep Models
 Category: readings
-Date: 2020-01-07
+Date: 2020-01-12
 Author: Pavlos Protopapas
 Slug: reading7
 Tags: 

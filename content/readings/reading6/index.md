@@ -1,21 +1,16 @@
-Title: Reading 6 
+Title: Reading Discussion 6: Distillation and Compression
 Category: readings
-Date: 2019-12-20
+Date: 2020-01-12
 Author: Pavlos Protopapas
 Slug: reading6
-Tags: TOPIC_16, TOPIC_17, TOPIC_18
+Tags:
 
+## Selected Readings
+#### Expository
+- [An embarrassingly simple approach to zero-shot learning](http://proceedings.mlr.press/v37/romera-paredes15.pdf)
+- [NVIDIA Transfer Learning Toolkit](https://developer.nvidia.com/transfer-learning-toolkit)
 
-## Reading
-
-How transferable are features in deep neural networks? [https://arxiv.org/abs/1411.1792](https://arxiv.org/abs/1411.1792)
-
-Distilling the Knowledge in a Neural Network [https://arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)
-
-An embarrassingly simple approach to zero-shot learning [http://proceedings.mlr.press/v37/romera-paredes15.pdf](http://proceedings.mlr.press/v37/romera-paredes15.pdf)
-
-A survey on Transfer Learning [https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf](https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf)
-
-## Tools
-
-Nvidia toolkit: [https://developer.nvidia.com/transfer-learning-toolkit](https://developer.nvidia.com/transfer-learning-toolkit)
+#### Research
+- [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)
+- [Distilling a neural network into a soft decision tree](https://arxiv.org/pdf/1711.09784.pdf)
+- [Model compression](https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf)

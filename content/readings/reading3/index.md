@@ -1,6 +1,6 @@
 Title: Reading Discussion 3: Dask 
 Category: readings
-Date: 2020-01-07
+Date: 2020-01-09
 Author: Pavlos Protopapas
 Slug: reading3
 Tags: Dask, Python, Parallel Processing

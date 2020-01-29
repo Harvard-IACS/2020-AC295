@@ -1,6 +1,6 @@
 Title: Reading Discussion 8: Convolutional Neural Networks for Image Data 
 Category: readings
-Date: 2020-01-07
+Date: 2020-01-13
 Author: Pavlos Protopapas
 Slug: reading8
 Tags:

@@ -1,6 +1,6 @@
 Title: Reading Discussion 5: Transfer Learning across Tasks
 Category: readings
-Date: 2020-01-07
+Date: 2020-01-11
 Author: Pavlos Protopapas
 Slug: reading5
 Tags:  
@@ -12,4 +12,5 @@ Tags:
 - [Transfer learning with a pretrained ConvNet](https://www.tensorflow.org/tutorials/images/transfer_learning)
 
 #### Research
-- [LINK_1](https://add_link)
+- [How transferable are features in deep neural networks?](https://arxiv.org/abs/1411.1792)
+- [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/pdf/1703.10593.pdf)
