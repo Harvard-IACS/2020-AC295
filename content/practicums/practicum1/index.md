@@ -1,5 +1,5 @@
-Title: Practicum 1
-Category: practicum
+Title: Practicum 1:
+Category: practicums
 Date: 2020-01-07
 Author: Andrea Porelli
 Slug: practicum1

@@ -83,7 +83,7 @@ PLUGINS = ['ipynb.markup', 'tipue_search']
 
 IGNORE_FILES = ['.#*', '.ipynb_checkpoints', 'README.md', "*.html", "__pycache__", "*.pdf", "*.pptx", ".placeholder", ".DS_Store", "*.ipynb-meta", "*.csv", "*.json", "*.txt", "*.xmls"]
 
-STATIC_PATHS = ['lectures', 'labs', 'readings','homeworks', 'a-sections', 'sections', 'wiki', 'images', 'projects', 'slides', 'data']
+STATIC_PATHS = ['lectures', 'practicums', 'readings','homeworks',  'sections', 'wiki', 'images', 'projects', 'slides', 'data']
 
 DIRECT_TEMPLATES = ['index', 'search', 'tags', 'category']
 

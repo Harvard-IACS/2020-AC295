@@ -1,5 +1,5 @@
 Title: Practicum 2
-Category: practicum
+Category: practicums
 Date: 2020-01-07
 Author: Andrea Porelli
 Slug: practicum2
