@@ -3,7 +3,7 @@ Category: readings
 Date: 2020-01-14
 Author: Pavlos Protopapas
 Slug: reading9
-Tags:  
+Tags: Text Data, Recurrent Neural Networks
 
 ## Selected Readings
 #### Expository

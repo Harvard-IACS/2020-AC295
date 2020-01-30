@@ -65,7 +65,7 @@ The course is organized in three modules each one 4 weeks long.
 2b. Transfer Learning across Tasks  
 2c. Distillation and Compression   
 
-3. **Visualization as investigative tool** 
+3. **Visualization as investigative tool**   
 3a. Introduction and Overview of Viz for Deep Models  
 3b. Convolutional Neural Networks for Image Data  
 3c. Recurrent Neural Networks for Text Data  

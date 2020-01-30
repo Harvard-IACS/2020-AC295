@@ -3,7 +3,7 @@ Category: readings
 Date: 2020-01-12
 Author: Pavlos Protopapas
 Slug: reading7
-Tags: 
+Tags: Visualization for Deep Models
 
 ## Selected Readings
 #### Expository

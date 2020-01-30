@@ -3,7 +3,7 @@ Category: readings
 Date: 2020-01-12
 Author: Pavlos Protopapas
 Slug: reading6
-Tags:
+Tags: Compression, Distillation 
 
 ## Selected Readings
 #### Expository

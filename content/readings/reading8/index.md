@@ -3,7 +3,7 @@ Category: readings
 Date: 2020-01-13
 Author: Pavlos Protopapas
 Slug: reading8
-Tags:
+Tags: Image Data, Convolutional Neural Networks
 
 ## Selected Readings
 #### Expository
