@@ -27,7 +27,7 @@ pre {
 ## List of Contents
 - [Prerequisites](#Prerequisites)
 - [Software](#Software)
-- [Course Structure](#Course-Structure)
+- [Topics](#Topics)
 - [Course Activities](#Course-Activities)
 - [Resources](#Resources)
 - [Assignments](#Assignments)
@@ -49,17 +49,26 @@ You are expected to be fluent in programming (Python), statistics knowledge at t
 We will be using a variety of software primarily Python 3, Pytorch, Tensorflow, Docker, etc. More details in class.
 
 <hr>
-<a name='Course-Structure'>
+<a name='Topics'>
 
-## Course Structure
+## Topics
 
 The course is organized in three modules each one 4 weeks long. 
 
-1. Deploy data science (integration + scalability)
+1. **Deploy data science** (integration + scalability)  
+1a. Virtual Environments, Virtual Boxes, and Containers  
+1b. Kubernetes  
+1c. Dask  
 
-2. Transfer learning and distillation
+2. **Transfer learning and distillation**  
+2a. Intro to Transfer Learning: Basic Transfer Learning and SOTA Models  
+2b. Transfer Learning across Tasks  
+2c. Distillation and Compression   
 
-3. Visualization as investigative tool
+3. **Visualization as investigative tool** 
+3a. Introduction and Overview of Viz for Deep Models  
+3b. Convolutional Neural Networks for Image Data  
+3c. Recurrent Neural Networks for Text Data  
 
 <hr>
 <a name='Course-Activities'>
