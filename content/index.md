@@ -58,5 +58,3 @@ pre {
 <br> 
 <strong>Office Hours:</strong> TBD
 <br/>
-
-<pre style="backgroundcolor:red">Class under construction <br/>Stay tuned</pre>
