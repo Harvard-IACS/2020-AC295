@@ -27,7 +27,8 @@ pre {
 ## List of Contents
 - [Prerequisites](#Prerequisites)
 - [Software](#Software)
-- [Course Structure Activities](#Course-Structure-Activities)
+- [Course Structure](#Course-Structure)
+- [Course Activities](#Course-Activities)
 - [Resources](#Resources)
 - [Assignments](#Assignments)
 - [Getting Help](#Getting-Help)
@@ -48,11 +49,24 @@ You are expected to be fluent in programming (Python), statistics knowledge at t
 We will be using a variety of software primarily Python 3, Pytorch, Tensorflow, Docker, etc. More details in class.
 
 <hr>
-<a name='Course-Structure-Activities'>
+<a name='Course-Structure'>
 
-## Course Structure and Activities
+## Course Structure
 
-The course is organized in three modules each one 4 weeks long. Each module is structured in three types of activities and they are: **Lectures**, **Reading Discussion**, and **Practicum**. Each activity requires the students to complete different assignments in the form of exercise/homework, quizzes, reading assignment, and presentation (see Assignments below). During the first 3 weeks of each module, students will attend Lecture on Tuesday and Reading Discussion on Thursday. The fourth week of each module will be Practicum on Tuesday and Thursday. **Attendance is mandatory**.
+The course is organized in three modules each one 4 weeks long. 
+
+1. Deploy data science (integration + scalability)
+
+2. Transfer learning and distillation
+
+3. Visualization as investigative tool
+
+<hr>
+<a name='Course-Activities'>
+
+## Course Activities
+
+Each module is structured in three types of activities and they are: **Lectures**, **Reading Discussion**, and **Practicum**. Each activity requires the students to complete different assignments in the form of exercise/homework, quizzes, reading assignment, and presentation (see Assignments below). During the first 3 weeks of each module, students will attend Lecture on Tuesday and Reading Discussion on Thursday. The fourth week of each module will be Practicum on Tuesday and Thursday. **Attendance is mandatory**.
 
 1. **Reading List** consists in papers, blogs and other reading material that will be released no later than the beginning of each week. This will be the base for all the activities during the week.
 
