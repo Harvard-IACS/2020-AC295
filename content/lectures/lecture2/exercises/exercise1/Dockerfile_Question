@@ -7,7 +7,5 @@
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip
 
-
-
  COPY Question.py /Question.py
  COPY Readme.txt /Readme.txt
