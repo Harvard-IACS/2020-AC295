@@ -77,11 +77,11 @@ The course is organized in three modules each one 4 weeks long.
 
 Each module is structured in three types of activities and they are: **Lectures**, **Reading Discussion**, and **Practicum**. Each activity requires the students to complete different assignments in the form of exercise/homework, quizzes, reading assignment, and presentation (see Assignments below). During the first 3 weeks of each module, students will attend Lecture on Tuesday and Reading Discussion on Thursday. The fourth week of each module will be Practicum on Tuesday and Thursday. **Attendance is mandatory**.
 
-1. **Reading List** consists in papers, blogs and other reading material that will be released no later than the beginning of each week. This will be the base for all the activities during the week.
+1. **Reading List** consists in papers, blogs and other reading material that will be released no later than the beginning of each week. This will be the base for all the activities during the week See Readings Guidelines here [link to guidelines](https://docs.google.com/document/d/1TQuPat76TSobGVAxPl4DR-68UMuME5_M66J5rkAUr-k/edit#heading=h.svo9lvagryas).
 
 2. **Lectures** are held on **Tuesdays** from **4:30-5:45** pm in Cruft 309. During this activity we will discuss and summarize the basic concepts of the material covered during the week.
 
-3. **Reading Discussions** are held on **Thursdays** from **4:30-5:45** pm in in Cruft 309. During this activity, two groups will present to the rest of the class one or two papers from the Reading List and lead the discussion. See Presentation Guidelines below.
+3. **Reading Discussions** are held on **Thursdays** from **4:30-5:45** pm in in Cruft 309. During this activity, two groups will present to the rest of the class one or two papers from the Reading List and lead the discussion. See Paper Presentation Guidelines here [link to guidelines](https://docs.google.com/document/d/1uvl7lc2cmSO7hLi9akVD704VHshoTVIVye-xKGT-aGQ/edit#heading=h.svo9lvagryas).
 
 4. **Practicum** are activities in the form of a project based on the material covered in the module. The students will work in groups and be expected to deliver a complete assignment in 10 days. There will be three practicum.
 
@@ -107,11 +107,11 @@ There are 9 homework to complete. They will be released at the end of each regul
 
 **Quizzes** 
 
-There will be a quiz at the beginning of each Reading Discussion based on what was discussed during lecture. The question will cover some of the material from Reading List and students will access them using Ed Platform on Canvas (select Ed from tab on course main page). Students will have a limited amount of time to complete the quiz. 40% of the quizzes will be dropped before calculating your final grade. Please see these [guidelines](https://docs.google.com/document/d/1TQuPat76TSobGVAxPl4DR-68UMuME5_M66J5rkAUr-k/edit#heading=h.svo9lvagryas) on course reading assignments.
+There will be a quiz at the beginning of each Reading Discussion based on what was discussed during lecture. The question will cover some of the material from Reading List and students will access them using Ed Platform on Canvas (select Ed from tab on course main page). Students will have a limited amount of time to complete the quiz. 40% of the quizzes will be dropped before calculating your final grade.
 
 **Presentations**
 
-At every Reading Discussion, two groups will present the reading material assigned at the beginning of the week.   Please see these [guidelines](https://docs.google.com/document/d/1uvl7lc2cmSO7hLi9akVD704VHshoTVIVye-xKGT-aGQ/edit#heading=h.svo9lvagryas) on the presentations.
+At every Reading Discussion, two groups will present the reading material assigned at the beginning of the week.   Please see these on the presentations.
 
 **Practicums**
 
