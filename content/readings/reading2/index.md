@@ -15,7 +15,7 @@ Tags: Kubernetes, Containers, Cloud
 - [LinuxFoundationX.LFS158x.2T2017](https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS158x+2T2017/course/)
 
 #### Research
-- <span style="background-color: #FFFF00">[*Kubernetes: Up and Running*](https://learning-oreilly-com.ezp-prod1.hul.harvard.edu/library/view/kubernetes-up-and/9781491935668/ch01.html#idm139638379223376)</span>
+- <span style="background-color: #FFFF00">[PDF available through Canvas | *Kubernetes: Up and Running*](https://canvas.harvard.edu/courses/71552/files?preview=9362061)</span>
 - <span style="background-color: #FFFF00">[*Containers and Cloud: From LXC to Docker to Kubernetes*](http://www.ce.uniroma2.it/courses/sdcc1617/articoli/bernstein_cc2014.pdf)</span>
 
 <span style="background-color: #FFFF00">*Selected readings for presentation*</span>
