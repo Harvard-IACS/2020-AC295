@@ -13,3 +13,7 @@ Tags: Dask, Python, Parallel Processing
 ## Jupyter Notebooks
 
 - [Lecture 4: Dask]({filename}notebook/lecture4.ipynb) 
+
+## Data
+
+- [NYC Parking Tickets Dataset](https://www.kaggle.com/new-york-city/nyc-parking-tickets)
