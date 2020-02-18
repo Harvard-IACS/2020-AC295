@@ -7,8 +7,9 @@ Tags: Dask, Python, Parallel Processing
 
 ## Slides
 
-- [Lecture 4: Dask]({attach}presentation/lecture4.pdf) 
+- [Lecture 4: Dask | PDF]({attach}presentation/lecture4.pdf) 
+- [Lecture 4: Dask | PPTX]({attach}presentation/lecture4.pptx)
 
 ## Jupyter Notebooks
 
-- [Lecture 4: Data Science with Python and Dask]({filename}notebook/lecture4.ipynb) 
+- [Lecture 4: Dask]({filename}notebook/lecture4.ipynb) 
