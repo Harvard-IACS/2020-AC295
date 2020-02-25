@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service # specify the K8s component the folliwing parameters define
 metadata:
-  name: sentiment-analysis-service
+  name: ___ 
   labels:
     service: ml-app
 spec:
@@ -11,4 +11,4 @@ spec:
   ports: # route external requests coming in on port 5000 to our pod
   - port: 5000 # expose Service externally on this port 
     targetPort: 5000 # Target port on any pods named ml-app that request will be sent to
-  type: LoadBalancer # exposes the Service externally using a cloud provider’s load balancer.
+  type: ___ # exposes the Service externally using a cloud provider’s load balancer.
