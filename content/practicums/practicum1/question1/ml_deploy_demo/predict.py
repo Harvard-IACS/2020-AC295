@@ -42,6 +42,7 @@ def predict(exp_config_path):
     return pred
 
 
+
 def predict_online(data, config=None):
     """Predict from in-memory data on the fly.
     """
@@ -73,7 +74,8 @@ def predict_online(data, config=None):
         logger.error(f"{e}")
         pred = []
 
-    return pred
+    #return pred
+    return  [1]
 
 
 if __name__ == "__main__":
