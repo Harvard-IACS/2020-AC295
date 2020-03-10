@@ -9,12 +9,12 @@
     />
     <meta
       name="description"
-      content="Spring 2020 - Harvard University, Institute for Applied Computational Science. Lecture 6: Notebook 6"
+      content="Spring 2020 - Harvard University, Institute for Applied Computational Science. Lecture 6: Transfer Learning 2"
     />
     <meta name="author" content="Pavlos Protopapas" />
 <meta
   name="keywords"
-  content="TOPIC_17, TOPIC_18, TOPIC_19"
+  content="Transfer Learning, Style Transfer Model, Image Classification and Transfer Learning"
 />
 
     <!-- Bootstrap CSS -->
@@ -53,7 +53,7 @@
     />
     <link rel="stylesheet" href="../../../style/css/iacs.css" />
 
-    <title>Harvard AC295 | Lecture 6: Notebook 6</title>
+    <title>Harvard AC295 | Lecture 6: Transfer Learning 2</title>
 
     <style>
       .navbar {
@@ -135,12 +135,12 @@
  <div>
   <div class="float-left">
     <p>
-      Key Word(s):       <a href="../../../pages/materials.html#TOPIC_17"
-        >TOPIC_17</a
-      >,       <a href="../../../pages/materials.html#TOPIC_18"
-        >TOPIC_18</a
-      >,       <a href="../../../pages/materials.html#TOPIC_19"
-        >TOPIC_19</a
+      Key Word(s):       <a href="../../../pages/materials.html#Transfer Learning"
+        >Transfer Learning</a
+      >,       <a href="../../../pages/materials.html#Style Transfer Model"
+        >Style Transfer Model</a
+      >,       <a href="../../../pages/materials.html#Image Classification and Transfer Learning"
+        >Image Classification and Transfer Learning</a
       >     </p>
   </div>
   <div class="float-right">
@@ -1300,37 +1300,160 @@ h6:hover .anchor-link {
 
 .ansi-bold { font-weight: bold; }
 </style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 style="padding-top: 25px;padding-bottom: 25px;text-align: left; padding-left: 10px; background-color: #DDDDDD; 
+    color: black;"> <img src="https://raw.githubusercontent.com/Harvard-IACS/2018-CS109A/master/content/styles/iacs.png" style="float: left; padding-right: 10px; width: 45px"> AC295: Advanced Practical Data Science </h1><h2 id="Lecture-6:--Transfer-Learning-2">Lecture 6:  Transfer Learning 2<a class="anchor-link" href="#Lecture-6:--Transfer-Learning-2">¶</a></h2><p><strong>Harvard University</strong><br>
+<strong>Spring 2020</strong><br>
+<strong>Instructors</strong>: Pavlos Protopapas <br>
+<strong>TF</strong>: Michael Emanuel, Andrea Porelli and Giulia Zerbini  <br>
+<strong>Author</strong>: Andrea Porelli and Pavlos Protopapas</p>
+<hr style="height:2px">
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">¶</a></h1><ul>
+<li><a href="#Lecture-6:-Transfer-Learning-2">Lecture 6: Transfer Learning 2</a><ul>
+<li><a href="#Part-1:-Deep-Learning-Based-Image-Recognition">Part 1: Deep Learning Based Image Recognition</a><ul>
+<li><a href="#1.1-Image-Recognition-and-Classificaiton">1.1 Image Recognition and Classificaiton</a></li>
+<li><a href="#1.2-Introduction-to-Image-Classification-using-Deep-Learning">1.2 Introduction to Image Classification using Deep Learning</a></li>
+<li><a href="#1.3-Benchmark-Datasets">1.3 Benchmark Datasets</a></li>
+<li><a href="#1.4-State-of-the-Art-(SOTA">1.4 State of the Art (SOTA) Deep Image Classification Models</a>-Deep-Image-Classification-Models)</li>
+</ul>
+</li>
+<li><a href="#Part-2:-Use-Cases">Part 2: Use Cases</a><ul>
+<li><a href="#2.1-Image-Classification-and-Transfer-Learning">2.1 Image Classification and Transfer Learning</a></li>
+<li><a href="#2.1-Style-Transfer">2.2 Style Transfer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-1:-Deep-Learning-Based-Image-Recognition">Part 1: Deep Learning Based Image Recognition<a class="anchor-link" href="#Part-1:-Deep-Learning-Based-Image-Recognition">¶</a></h2><h3 id="1.1-Image-Recognition-and-Classification">1.1 Image Recognition and Classification<a class="anchor-link" href="#1.1-Image-Recognition-and-Classification">¶</a></h3><ul>
+<li>Active interdisciplinary field under the umbrella of computer vision.</li>
+<li>It is the task of identifying an object within an image or video/sequence.</li>
+<li>Traditionally, this field has leveraged advancements in mathematical and computer-aided modeling, and the design of objects.</li>
+<li>Several hand-annotated datasets have been developed over the years to test and evaluate image recognition systems.</li>
+<li>Traditional tecniques were dominating the scene and iteratively improving upon the task until recentely.</li>
+<li>In 2012, deep learning arrived at the ImageNet competition and opened the floodgates for rapid improvements and advancements in computer vision and deep learning techniques.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.2-Introduction-to-Image-Classification-using-Deep-Learning">1.2 Introduction to Image Classification using Deep Learning<a class="anchor-link" href="#1.2-Introduction-to-Image-Classification-using-Deep-Learning">¶</a></h3><ul>
+<li>Convolutional Neural Networks (CNNs) are at the heart of this deep learning revolution for improving the task of image classification.</li>
+<li>CNNs are specialized neural networks to handle image data.</li>
+<li>CNNs help us infer shift and space invariant features through their shared weight architectures, and are basically a variant of feed forward networks.</li>
+<li>Below is a quick overview of CNNs' components.
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Typical_cnn.png" width="600">
+source: WIKIPEDIA</img></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.3-Benchmark-Datasets">1.3 Benchmark Datasets<a class="anchor-link" href="#1.3-Benchmark-Datasets">¶</a></h3><ul>
+<li>Image classification is a supervised task.</li>
+<li>The number of parameters to train a CNN might be huge, thus required a lot of labeled images and huge datasets are required.</li>
+<li>Luckily research groups across the globe have been working toward collecting, hand annotating, and crowdsourcing different datasets.</li>
+<li>These datasets are utilized to benchmark performance of different algorithms.</li>
+<li>Below is a short list of widely accepted benchmarking datasets in the field of image classification:<ul>
+<li><strong>ImageNet:</strong> 14M images, 20K categories, Princeton University, 2009</li>
+<li><strong>80 Millions Tiny Images datasets:</strong> 80M low resolution images colled from the internet, 75K non-abstract nouns, MIT. It is the basis for other famous datasets including CIFAR</li>
+<li><strong>CIFAR-10:</strong> 60K low resolution images, 10 non-overlapping classes, Canadian Institute for Advanced Research. Most wide used dataset in ML</li>
+<li><strong>CIFAR-100:</strong> 60K low resolution images evenly spread across 100 classes, Canadian Institute for Advanced Research</li>
+<li><strong>Common Object in Context (COCO):</strong> 200K images evenly spread across different classes. It is a large scale visual database for object identification, segmentation, and captioning</li>
+<li><strong>Open Images:</strong> 9M images with labels</li>
+<li><strong>Caltech 101 and Caltech 256:</strong> 9K and 30K images respectively, spanning across 101 and 256 classes</li>
+<li><strong>Stanford Dog dataset: 20K colord images, 200 classes.</strong> It is specific to different dog breads</li>
+<li><strong>MNIST:</strong> 60K hand-labeled digits (zero to nine). One of the most famous datasets for ML</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.4-State-of-the-Art-(SOTA)-Deep-Image-Classification-Models">1.4 State of the Art (SOTA) Deep Image Classification Models<a class="anchor-link" href="#1.4-State-of-the-Art-(SOTA)-Deep-Image-Classification-Models">¶</a></h3><ul>
+<li>Deep learning has received much attention and hype over the years, it is not a surprised that a lot of conferences, journals and competitions worldwide centered around that.</li>
+<li>Image classification architectures have experienced iterative improvements on a regular basis.</li>
+<li>Let's look at the best SOTA models:<ul>
+<li>AlexNet</li>
+<li>VGG-16</li>
+<li>Inception (GoogleNet)</li>
+<li>ResNet</li>
+<li>MobileNet</li>
+<li>DenseNet</li>
+</ul>
+</li>
+</ul>
+<p>see lecture 5 for more information about SOTAs</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Part-2:-Use-Cases">Part 2: Use Cases<a class="anchor-link" href="#Part-2:-Use-Cases">¶</a></h2><p>Let's use Transfer Learning, to build some applications. It is convenient to run the applications on Google Colab. Check out the links below.</p>
+<h3 id="2.1-Image-Classification-and-Transfer-Learning">2.1 Image Classification and Transfer Learning<a class="anchor-link" href="#2.1-Image-Classification-and-Transfer-Learning">¶</a></h3><ul>
+<li>You know what image classification is all about. Now we will use pretrained model(s) to understand how we can leverage transfer learning to improve upon our models.</li>
+<li>In particular we are going to focus on fine-grained image classification which refers to the task of recognizing different sublcasses within a higher-level class.</li>
+<li>We will focus around the Stanford Dogs Dataset which contains the images of different dog breeds. Hence the task is to categorize different dog breeds.</li>
+<li>We are going to train the model on a <strong>subset</strong> of the entire dataset.</li>
+<li>The keys areas of focus in this use case will be:<ul>
+<li>Data preparation</li>
+<li>Train dog breeds classifier using Transfer Learning</li>
+</ul>
+</li>
+<li>Find more on the colab notebook <a href="https://colab.research.google.com/drive/1vY5OSsebe5pRKicq9Db1ZdQ2pIHCfbsw">Lecture 6: Transfer Learning across Tasks: Image Classification and Transfer Learning</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.2-Style-Transfer">2.2 Style Transfer<a class="anchor-link" href="#2.2-Style-Transfer">¶</a></h3><ul>
+<li>Painting present a complex interplay of content and style. Photograph are a combination of perspectives and lights. Let's combine them for spectacular and surprising results.</li>
+<li>Our goal is to modify the original image (a bird's eye view of the city of Venice) adding the style, colors and stroke paterns from a piece of art (in our case a mosaic designed by Gaudi')</li>
+<li>The outcome will be the result of a Transfer Learning algorithm presented in the paper <a href="https://arxiv.org/pdf/1508.06576.pdf">A Neural Algorithm of Artistic Style</a></li>
+<li>The key areas of focus in this use case will be:<ul>
+<li>Understanding neural style transfer</li>
+<li>Image preprocessing</li>
+<li>Building loss function</li>
+<li>Constructing a custom optimizer</li>
+<li>Style transfer in action</li>
+</ul>
+</li>
+<li>Find more on the colab notebook <a href="https://colab.research.google.com/drive/19awyAD09rbdknV_jkfS4yMRFKW0223Ll">Lecture 6:  Transfer Learning across Tasks: Style Transfer Model</a></li>
+</ul>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [1]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [2]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
-<span class="n">summation</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">summation</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>11
-</pre>
-</div>
 </div>
 </div>
 </div>
