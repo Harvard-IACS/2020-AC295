@@ -1,14 +1,18 @@
-Title: Lecture 8
+Title: Lecture 8: Introduction and overview of Viz for Deep Models
 Category: lectures
 Date: 2020-01-07
 Author: Andrea Porelli
 Slug: lecture8
-Tags: TOPIC_10, TOPIC_11, TOPIC_12
+Tags: Class Maximization, Saliency Map, Activation Maximization
 
 ## Slides
 
-- [Lecture 8: Title]({attach}presentation/lecture8.pdf) 
+- [Lecture 8: Introduction and overview of Viz for Deep Models]({attach}presentation/lecture8.slides.html) 
 
 ## Jupyter Notebooks
 
-- [Lecture 8: Title]({filename}notebook/lecture8.ipynb) 
+- [Lecture 8: Introduction and overview of Viz for Deep Models]({filename}notebook/lecture8.ipynb) 
+
+## Colab
+
+- [Introduction and overview of Viz for Deep Models](add_link) 
