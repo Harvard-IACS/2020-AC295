@@ -1,14 +1,10 @@
-Title: Lecture 9
+Title: Lecture 9: Convolutional Neural Networks for Image Data
 Category: lectures
 Date: 2020-01-07
 Author: Andrea Porelli
 Slug: lecture9
-Tags: TOPIC_10, TOPIC_11, TOPIC_12
+Tags: Visualize Filters, Activation Maximization
 
-## Slides
+## Colab Notebook
 
-- [Lecture 9: Title]({attach}presentation/lecture9.pdf) 
-
-## Jupyter Notebooks
-
-- [Lecture 9: Title]({filename}notebook/lecture9.ipynb) 
+- [Lecture 9: Convolutional Neural Networks for Image Data](https://colab.research.google.com/drive/1telwLH_vQImE8GcnQ7bxQA2FkZpeNf8H) 
