@@ -1,14 +1,15 @@
-Title: Lecture 10
+Title: Lecture 10: Language Models
 Category: lectures
 Date: 2020-01-07
 Author: Andrea Porelli
 Slug: lecture10
-Tags: TOPIC_10, TOPIC_11, TOPIC_12
+Tags: RNN, LSTM, GRU, ELMO, BERT
 
 ## Slides
 
-- [Lecture 10: Title]({attach}presentation/lecture10.pdf) 
+- [PPTX | Lecture 10: Language Model - Part 1]({attach}presentation/AC295+cs109b_lecture_language.pptx) 
+- [PPTX | Lecture 10:  Language Model - Part 2]({attach}presentation/AC295+cs109b_language2.pptx) 
 
-## Jupyter Notebooks
+## Colab Notebooks
 
-- [Lecture 10: Title]({filename}notebook/lecture10.ipynb) 
+- [Lecture 10: Hands on RNN](https://colab.research.google.com/drive/1YQsQgMftR_AufDgmWU4p5E_4-lbcmNp1) 
